@@ -1,0 +1,31 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <%= link_to "/", class: "navbar-brand" do %>
+    <%= image_tag "MM_Logo-2019.png" %>
+  <% end %>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <%= link_to "ABOUT", "/pages/about", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "MACARON", "/pages/macaron", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "HOME DELIVERY", "/pages/homedelivery", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "WHERE TO FIND US", "/pages/wheretofindus", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "CONTACT & ORDERS", "/pages/contactorders", class: "nav-link" %>
+      </li>
+    </ul>
+  </div>
+</div>
+
