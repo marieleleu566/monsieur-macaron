@@ -1,0 +1,92 @@
+.footer {
+  background: #561B16;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 140px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+}
+.footer-contact {
+  display: inline;
+  align-items: center;
+  p {
+    font-size:15px;
+    color:white;
+    letter-spacing: 1px;
+  }
+}
+
+.footer-text {
+    a {
+    font-size:15px;
+    color:white;
+    letter-spacing: 1px;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: grey;
+  }
+}
+
+.footer-nav {
+  padding:0;
+  margin-bottom: 0;
+  margin-top: 8px;
+  margin-left: 40px;
+}
+
+.footer-copyright {
+  display: flex;
+  color:white;
+  justify-content: center;
+  align-items: center;
+  ul{
+    list-style-type: none;
+  }
+  a {
+  font-size: 14px;
+  color: white;
+  }
+  a:hover {
+    color: grey;
+  }
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.footer-links a:hover {
+  opacity: 1;
+}
+
+
+.footer .fa-instagram-square {
+  color:white;
+    font-size: 35px;
+  padding: 0px 20px;
+}
+
+.footer .fa-facebook-square {
+  color:white;
+    font-size: 35px;
+  padding: 0px 20px;
+}
+
+.footer .fa-envelope-square {
+  color:white;
+    font-size: 35px;
+  padding: 0px 20px;
+}
+
+
+.footer .fa-phone-square-alt {
+  color:white;
+    font-size: 35px;
+  padding: 0px 20px;
+}

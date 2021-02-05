@@ -1,3 +1,18 @@
+.home-delivery-banner{
+  position: relative;
+  text-align: center;
+}
+
+.home-delivery-title{
+  font-size:60px;
+  position: absolute;
+  text-shadow: 2px 2px black;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .home-delivery-info {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -23,18 +38,25 @@
   color:#5b1b14;
 }
 
+
+
 .home-delivery-price-box {
   h3 {
-    text-shadow: 1px 1px #5b1b03;
+    text-shadow: 1px 1px black;
+    letter-spacing: 2px;
+    font-family: 'Lato';
+    font-size: 30px;
+
   }
   text-align: center;
   color:white;
-  background-color: #5b1b14;
-  border: 2px solid #5b1b14;
+  background: linear-gradient(135deg, #820204 0%,#5b1b14 100%);
+  border: 2px solid #820204;
   border-radius: 5px 5px 5px 5px;
   padding: 50px 20px;
   box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
 }
+
 
 .free-delivery {
  letter-spacing: 1px;
@@ -56,11 +78,6 @@
   }
 }
 
-.home-delivery-title {
-  text-align: center;
-  margin: 50px 0;
-}
-
 .signup-info {
   margin-top:15px;
   font-size: 12px;
@@ -70,10 +87,19 @@
 .signup {
   border-radius: 5px 5px 5px 5px;
   background-color: white;
+  border:1px solid #5b1b14;
   color:#5b1b14;
   padding: 10px;
   font-family: 'Lato', sans-serif;
   margin: 25px 0;
+  letter-spacing: 1px;
+}
+
+.signup:hover{
+  background-color:white;
+  opacity: .4;
+  color:#5b1b14;
+  border: 1px solid white;
 }
 
   a {
@@ -86,4 +112,18 @@
 
   .fas {
     margin-right: 3px;
+  }
+
+@media (max-width: 420px) {
+  .home-delivery-info {
+    grid-template-columns: 1fr;
+  }
+
+  .home-delivery-title {
+    font-size: 25px;
+  }
+
+  .home-delivery-price {
+    margin-top: 0;
+  }
   }
