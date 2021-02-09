@@ -4,8 +4,8 @@ Rails.application.configure do
   # Code is not reloaded between requests.
   config.cache_classes = true
 
-  config.action_mailer_default_url_options = { host: 'marieleleu.herokuapp.com' }
-  Rails.application.routes.default_url_options[:host] = 'marieleleu.herokuapp.com'
+  config.action_mailer_default_url_options = { host: 'monsieurmacaron.herokuapp.com' }
+  Rails.application.routes.default_url_options[:host] = 'monsieurmacaron.herokuapp.com'
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = false
