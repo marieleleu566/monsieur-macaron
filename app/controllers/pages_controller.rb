@@ -13,7 +13,4 @@ class PagesController < ApplicationController
 
   def wheretofindus
   end
-
-  def contactorders
-  end
 end
