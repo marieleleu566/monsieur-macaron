@@ -1,23 +1,42 @@
+.parallax-home-delivery {
+  /* The image used */
+  background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/homedelivery1.jpg");
+  /* Set a specific height */
+  min-height: 720px;
+  width:100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .home-delivery-banner{
-  position: relative;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
 }
 
 .home-delivery-title{
-  font-size:60px;
-  position: absolute;
-  text-shadow: 2px 2px black;
-  color: white;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-size:120px;
+  color: oldlace;
+  font-family: 'Nerko One';
+  letter-spacing: 2.5px;
+  p {
+    color: oldlace;
+    text-shadow: 1px 1px black;
+    font-size: 35px;
+    font-family: 'Lato';
+    text-align: center;
+  }
 }
 
 .home-delivery-info {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap:50px;
-  margin-bottom: 80px;
+  margin-bottom: 100px;
 }
 
 .home-delivery-text {

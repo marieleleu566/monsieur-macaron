@@ -1,9 +1,8 @@
+<div class="parallax-home-delivery">
   <div class="home-delivery-banner">
-    <h1 class="home-delivery-title">Home Delivery in Hawke's Bay</h1>
-    <div class="home-delivery-photo">
-      <%= image_tag 'croissants copy.jpg', style:"max-width:100%"%>
-    </div>
+    <h1 class="home-delivery-title">HOME DELIVERY<br><p>In Hawke's Bay</p></h1>
   </div>
+</div>
 <div class="container">
   <div class="home-delivery-info">
     <div class="home-delivery-text">
@@ -30,3 +29,7 @@
     </div>
   </div>
 </div>
+<script>
+  ScrollReveal().reveal('.home-delivery-price', { delay: 500, distance: '200px', origin: 'right', easing: 'ease-in'})
+  ScrollReveal().reveal('.home-delivery-info', { delay: 500, distance: '200px', origin: 'left', easing: 'ease-in'})
+</script>

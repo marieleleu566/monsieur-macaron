@@ -45,97 +45,20 @@ body {
   }
 }
 
-//PARALLAX//
-.c {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  height: 100%;
-  justify-content: space-around;
-  position: relative;
-  width: 100%;
+.parallax {
+  /* The image used */
+  background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronhome.jpg");
 
-  section {
-    width: 100%;
-    height: 100vh;
-    flex: 1;
-    display: flex;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
+  /* Set a specific height */
+  min-height: 700px;
 
-    &:nth-child(1) {
-      .image {
-        background-image: url('https://marportfolio.s3.eu-west-3.amazonaws.com/macaronhome.jpg');
-      }
-    }
-
-    &:nth-child(2) {
-        background-color:white;
-    }
-
-    &:nth-child(3) {
-      .image {
-        background-image: url(https://images.unsplash.com/photo-1461770354136-8f58567b617a?iq=100&fm=jpg&w=1000);
-      }
-    }
-
-    &:nth-child(4) {
-      .image {
-        background-image: url(https://images.unsplash.com/photo-1461080639469-66d73688fb21?iq=100&fm=jpg&w=1000);
-      }
-    }
-
-    &:nth-child(5) {
-      .image {
-        background-image: url(https://images.unsplash.com/photo-1460804198264-011ca89eaa43?iq=100&fm=jpg&w=1000);
-      }
-    }
-
-    &:nth-child(6) {
-      .image {
-        background-image: url(https://images.unsplash.com/photo-1463123081488-789f998ac9c4?iq=100&fm=jpg&w=1000);
-      }
-    }
-
-    .image {
-      background-attachment: fixed;
-      background-size: cover;
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      z-index: 1;
-    }
-
-    .stuff {
-      display: flex;
-      height: 100%;
-      max-width: 100%;
-      justify-content: center;
-      text-align: center;
-      z-index: 1000;
-      margin: 0 auto;
-      font-size: 26px;
-      position: relative;
-     }
-  }
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-// .MainContainer {
-//   perspective: 1px;
-//   transform-style: preserve-3d;
-//   height: 100vh;
-//   overflow-x: hidden;
-//   overflow-y: scroll;
-// }
 
-// .ContentContainer {
-//   position: relative;
-//   display: block;
-//   background-color: white;
-//   z-index: 1;
-// }
 
 .Content {
   max-width: 850px;
@@ -144,12 +67,4 @@ body {
 }
 
 
-// .ParallaxContainer {
-//   position: relative;
-//   z-index: -1;
-//   height: 100vh;
-//   justify-content: center;
-//   align-items: center;
-//   transform: translateZ(-1px) scale(2);
-// }
 

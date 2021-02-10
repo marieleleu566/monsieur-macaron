@@ -1,16 +1,16 @@
-<div class="macaron-banner">
-  <h1 class="macaron-title-word">Macarons</h1>
-  <div class="macaron-banner-image">
-    <%= image_tag 'macaronpage.jpg', style:'max-width:100%'%>
-  </div>
+<div class="parallax-macaron">
+  <h1 class="macaron-title-word">MACARONS</h1>
+  <p class="macaron-title-sentence">Made With French Savoir Faire</p>
 </div>
 
 <div class="container">
   <div class="macaron-text">
+    <div class="macaron-text-section">
     <p class="macaron-info">Simply <b class="bold">the best</b> biscuit in the world.<br><br> Made with gluten-free ingredients, these sweets treats are perfect for enjoying<br> and sharing with your family and friends.<br><br>
       Inspired by the sin of Gourmandise.<br><br>
       Parisian macarons are decadent almond based gateau with a crispy outside shell of meringue and a soft chewy inside that melts in your mouth. These skillfully crafted treats are perfect paired with an afternoon tea, or as the main event after dinner.<br>
     </p>
+    </div>
     <h3>Classic Macarons</h3>
     <ul class="classic-macarons">
       <li class="macaron"><%= image_tag 'Chocolate_Macaron.jpg', style:'max-height:200px;'%><h4>Chocolate</h4><p>Packed full of rich chocolate ganache...</p></li>
@@ -32,6 +32,7 @@
   </div>
 </div>
 
+<div class=parallax-macaron-2>
 <div class="macaron-prices">
   <div class="prices-box-format">
     <div class="prices-box">
@@ -80,3 +81,10 @@
     </div>
   </div>
 </div>
+</div>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+  ScrollReveal().reveal('.macaron-prices', { delay: 500, distance: '200px', origin: 'left', easing: 'ease-in'})
+  ScrollReveal().reveal('.macaron-info', { delay: 500, distance: '200px', origin: 'right', easing: 'ease-in'})
+</script>

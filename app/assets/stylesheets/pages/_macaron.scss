@@ -1,3 +1,31 @@
+.parallax-macaron {
+  /* The image used */
+  background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclose.jpg");
+
+  /* Set a specific height */
+  min-height: 720px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-macaron-2 {
+  /* The image used */
+  background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/chocolate.jpg");
+
+  /* Set a specific height */
+  min-height: 700px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .classic-macarons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -14,15 +42,24 @@ ul {
 }
 
 .macaron-title-word {
-  text-shadow: 2px 2px black;
+    position: absolute;
+    font-size: 145px;
+    color: oldlace;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Nerko One';
+    letter-spacing: 2.5px;
+}
+
+.macaron-title-sentence {
   position: absolute;
-  font-size:65px;
-  color: white;
-  top: 50%;
+  font-size:25px;
+  color: oldlace;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .macaron-banner {
   position: relative;
   text-align: center;
@@ -52,7 +89,6 @@ ul {
 }
 
 .macaron-prices {
-  background-color: #561B16;
   max-width: 100%;
   height: 700px;
   display: flex;
@@ -61,8 +97,9 @@ ul {
 }
 
 .prices-box {
-  color: white;
-  border: 2px solid white;
+  color: #5b1b14;
+  background-color: white;
+  border: 2px solid #5b1b14;
   padding: 30px;
   border-radius: 5px;
   box-shadow: 2px 2px rgba(100, 100, 100, 0.2);
@@ -105,7 +142,7 @@ ul {
 }
 
 .test {
-  background-color: white;
+  background-color: #5b1b14;
   max-width: 215px;
 }
 
@@ -121,10 +158,9 @@ ul {
 }
 
 .buy-now-button:hover{
-  background-color:white;
-  opacity: .4;
-  color:#5b1b14;
-  border: 1px solid white;
+  background-color:#5b1b14;
+  color:white;
+  border: 1px solid #5b1b14;
 }
 
 .button {
