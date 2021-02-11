@@ -1,18 +1,19 @@
-<div class="Content">
+<div class="container">
+  <h1 class="contact-title">Contact & Orders</h1>
+<div class="contact-grid">
   <div class="contact-info">
-    <h1>Contact & Orders</h1>
-<!--     <div class="contact-links">
-      <a href="mailto:macaron.monsieur@gmail.com"><i class="fas fa-envelope-square fa-3x"></i></a>
-      <a href="https://www.instagram.com/monsieurmacaron/"><i class="fab fa-instagram-square fa-3x"></i></a>
-      <a href="https://www.facebook.com/mrmacnz"><i class="fab fa-facebook-square fa-3x"></i></a>
-      <a href="tel:+64 210 822 0001"><i class="fas fa-phone-square-alt fa-3x"></i></a>
-    </div> -->
-    <p> We now deliver Macarons across the Nth. Island!<br>For Macaron shipping & prices please see details <a href="pages/macaron">here.</a><br><br>
-    For Saturday Morning Home Delivery please see details <a href="pages/homedelivery">here.</a><br><br>
-    For all general enquiries and Maracon orders, or enquiries about <br>Corporate Functions & Wedding Catering please fill out the form below.</p>
-  </div>
   <div class="contact-image">
     <%= image_tag 'macaron-contact.jpg' %>
+  </div>
+    <p> We now deliver Macarons across the Nth. Island!<br>For Macaron shipping & prices please see details <a href="pages/macaron">here.</a><br><br>
+    For Saturday Morning Home Delivery<br> please see details <a href="pages/homedelivery">here.</a><br><br>
+    For all general enquiries and Maracon orders, or enquiries about Corporate Functions & Wedding Catering please fill out the form.</p>
+<!--     <div class="contact-links">
+      <a href="mailto:macaron.monsieur@gmail.com"><i class="fas fa-envelope-square fa-2x"></i></a>
+      <a href="https://www.instagram.com/monsieurmacaron/"><i class="fab fa-instagram-square fa-2x"></i></a>
+      <a href="https://www.facebook.com/mrmacnz"><i class="fab fa-facebook-square fa-2x"></i></a>
+      <a href="tel:+64 210 822 0001"><i class="fas fa-phone-square-alt fa-2x"></i></a>
+    </div> -->
   </div>
   <div class="contact-form">
     <%= simple_form_for @contact do |f| %>
@@ -40,7 +41,7 @@
       </div>
       <div class="form-text">
         <%= f.label 'Orders & Questions', required: true %>
-        <%= f.text_area(:message, rows: 5, class:"form-control")%> <br>
+        <%= f.text_area(:message, rows: 3, class:"form-control")%> <br>
       </div>
       <div class="send-button">
         <%= f.submit 'SEND', class: "send-btn" %>
@@ -48,6 +49,8 @@
     <% end %>
   </div>
 </div>
+</div>
+
 <script>
   ScrollReveal().reveal('.contact-image', { delay: 500, distance: '200px', origin: 'top', easing: 'ease-in'})
 </script>
