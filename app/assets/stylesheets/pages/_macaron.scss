@@ -42,16 +42,17 @@ ul {
 }
 
 .macaron-title-word {
-    position: absolute;
-    font-size: 135px;
-    color: oldlace;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: 'Ball';
+  font-size: 135px;
+  color: oldlace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  font-family: 'Ball';
 }
 
 .macaron-title-sentence {
+  margin-top: 30px;
   position: absolute;
   font-size:30px;
   color: oldlace;
