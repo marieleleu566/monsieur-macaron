@@ -35,3 +35,13 @@
 .parallax__layer--back {
   transform: translateZ(-1px);
 }
+
+@media (max-width: 620px) {
+  #map {
+    height: 400px !important;
+  }
+  .find-us-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

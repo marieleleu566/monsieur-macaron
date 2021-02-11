@@ -87,3 +87,16 @@ abbr{
     display: flex;
     justify-content: center;
   }
+
+@media (max-width: 620px) {
+  .contact-grid {
+    padding: 10px;
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form label {
+    font-size: 12px;
+  }
+}
+
+

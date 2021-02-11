@@ -169,7 +169,7 @@ ul {
   align-items: center;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 620px) {
   .chocolate-macarons {
     grid-template-columns: 1fr 1fr;
   }
@@ -186,6 +186,36 @@ ul {
     h3 {
       margin: 0;
     }
+  }
+  .macaron-title-word {
+    font-size: 65px;
+    top:30%;
+
+  }
+  .macaron-title-sentence {
+    font-size: 20px;
+    top: 38%;
+  }
+  .container {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .macaron-prices {
+    height: 900px;
+  }
+  p.macaron-info {
+    margin-top: 0;
+  }
+
+  .parallax-macaron {
+    background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclose2media.jpg");
+    min-height: 414px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-position: inherit;
+    background-size: inherit;
   }
   }
 

@@ -133,15 +133,31 @@ background: linear-gradient(1deg, #820204 0%, #5b1b14 100%);  border: 2px solid 
   }
 
 @media (max-width: 420px) {
+  .parallax-home-delivery {
+      background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/homedelivery1media.jpg");
+      min-height: 414px;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      max-width: 100%;
+      background-position: inherit;
+      background-size: inherit;
+    }
   .home-delivery-info {
     grid-template-columns: 1fr;
   }
 
   .home-delivery-title {
-    font-size: 25px;
+    font-size: 55px;
   }
 
   .home-delivery-price {
+    margin-top: 0;
+  }
+
+  .home-delivery-banner {
+    height:370px;
+  }
+  .home-delivery-text {
     margin-top: 0;
   }
   }

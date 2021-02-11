@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 130px;
+  max-height: 130px;
   padding: 0px 50px;
   color: rgba(0,0,0,0.3);
 }
@@ -87,6 +87,65 @@
 
 .footer .fa-phone-square-alt {
   color:white;
-    font-size: 35px;
+  font-size: 35px;
   padding: 0px 20px;
 }
+
+@media (max-width: 620px) {
+  .footer-nav-links {
+   display:none;
+  }
+
+  .footer-text {
+    p {
+      margin-bottom: 0;
+    }
+    a {
+      font-size: 10px;
+      margin-bottom: 0;
+    }
+  }
+
+  .footer-image {
+    display:none;
+  }
+
+  .footer {
+    padding: 0 10px;
+  }
+
+  .footer-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+        p {
+      font-size:10px;
+    }
+  }
+  .footer .fa-instagram-square {
+    color:white;
+    font-size: 25px;
+    padding: 0px 5px;
+}
+
+  .footer .fa-facebook-square {
+    color:white;
+    font-size: 25px;
+    padding: 0px 5px;
+  }
+
+.footer .fa-envelope-square {
+    color:white;
+    font-size: 25px;
+    padding: 0px 5px;
+}
+
+
+.footer .fa-phone-square-alt {
+  color:white;
+  font-size: 25px;
+  padding: 0px 5px;
+}
+}
+
