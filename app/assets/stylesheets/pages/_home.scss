@@ -1,4 +1,9 @@
 // Specific CSS for your home-page
+@font-face {
+  font-family: "Ball";
+  src: font-url('Ball.ttf') format('truetype')
+}
+
 body {
   background-color:white;
 }
@@ -8,22 +13,38 @@ body {
   justify-content: center;
 }
 
+.title {
+  h1 {
+  font-family:"Ball";
+  font-size:140px;
+  }
+  color: oldlace;
+}
+
+.display-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  position: relative;
+}
+
 .typed-cursor {
   display:none;
 }
 
 .moving-text {
-  color: #561B16;
-  z-index:1;
-  margin-top:100px;
-  // bottom:600px;
+  position: absolute;
+  top: 60%;
+  left: 35%;
   font-family: $headers-font;
-  font-size: 50px;
+  font-size: 30px;
+  color: oldlace;
 }
 
 .about-text {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 60px;
   p {
     font-size: 20px;
   }
@@ -45,9 +66,35 @@ body {
   }
 }
 
+.home-pastery, .home-macaron, .home-croiss {
+    a {
+    color: #5b1b14;
+  }
+  a:hover {
+    color: grey;
+  }
+}
+
+.about-photos-2 {
+  margin-bottom: 100px;
+  margin-top: 30px;
+  text-align: center;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  img {
+    padding:20px;
+  }
+  h2 {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    font-size:25px;
+  }
+}
+
 .parallax {
   /* The image used */
-  background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclose.jpg");
+  background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaroncloseoverlay.jpg");
   /* Set a specific height */
   min-height: 720px;
   /* Create the parallax scrolling effect */
@@ -58,9 +105,27 @@ body {
   max-width:100%;
 }
 
+.parallax-2 {
+  /* The image used */
+  background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronplate.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width:100%;
+}
 
 .Content {
   max-width: 850px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.Content-2 {
+  max-width: 1000px;
   margin: 0 auto;
   padding: 15px 0;
 }
@@ -89,6 +154,10 @@ body {
   padding: 20px;
   border: 1px solid white;
   max-width: 500px; /* Could be more or less, depending on screen size */
+  h1 {
+    font-family:'ball';
+    font-size: 60px;
+  }
   h1, h4, h5, p, a {
     text-align:center;
     margin-bottom: 20px;
@@ -181,6 +250,8 @@ body {
       grid-template-columns: 1fr;
     }
 
-
+     .about-photos-2 {
+      grid-template-columns: 1fr;
+    }
   }
 
