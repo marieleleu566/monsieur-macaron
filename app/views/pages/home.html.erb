@@ -96,6 +96,19 @@
       modal.style.display = "none";
     }
   }
+
+var hasVisited = sessionStorage.getItem("hasVisited");
+
+// If falsy, user didn't visited your page yet.
+if (!hasVisited) {
+    sessionStorage.setItem("hasVisited", true);
+      window.onload = function() {
+      setTimeout(function() {
+          document.getElementById('myModal').style.display = 'block';
+      }, 1500);
+  } // Shows popup only once
+}
+
     ScrollReveal().reveal('.headline');
     ScrollReveal().reveal('.home-macaron', { delay: 300, distance: '250px', easing: 'ease-in'})
     ScrollReveal().reveal('.home-croiss', { delay: 500, distance: '250px', easing: 'ease-in' })
