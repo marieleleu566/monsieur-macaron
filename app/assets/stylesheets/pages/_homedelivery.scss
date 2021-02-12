@@ -133,7 +133,7 @@
     margin-right: 3px;
   }
 
-@media (max-width: 420px) {
+@media (max-width: 720px) {
   .parallax-home-delivery {
       background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/homedelivery1media.jpg");
       min-height: 414px;
@@ -147,8 +147,25 @@
     grid-template-columns: 1fr;
   }
 
-  .home-delivery-title {
-    font-size: 55px;
+  .home-title-word {
+    font-size: 55px !important;
+    color: oldlace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    font-family: 'Ball';
+  }
+
+  .home-title-sentence {
+    margin-top: 60px;
+    position: absolute;
+    font-size: 20px;
+    color: oldlace;
+    top: 29%;
+    left: 50%;
+    text-shadow: 1px 1px black;
+    transform: translate(-50%, -50%);
   }
 
   .home-delivery-price {
@@ -160,5 +177,11 @@
   }
   .home-delivery-text {
     margin-top: 0;
+  }
+  }
+
+  @media (max-width: 1024px) {
+    .home-title-word {
+      font-size: 120px;
   }
   }

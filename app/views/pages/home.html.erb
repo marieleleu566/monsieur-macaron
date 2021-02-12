@@ -1,42 +1,37 @@
-<div class="parallax">
-  <div class="display-text">
-  <div class="title">
-    <div class="mr-title">
-      <h1>Monsieur Macaron<br></h1>
+<div class="content">
+  <div class="parallax">
+    <div class="display-text">
+    <div class="title">
+      <div class="mr-title">
+        <h1>Monsieur Macaron<br></h1>
+      </div>
+    </div>
+    </div>
+      <div class="moving-text">
+        <span id="banner-typed-text"></span>
+      </div>
+  </div>
+  <div class="Content" data-type="content">
+    <div class="about-text">
+      <h1>Monsieur Macaron perpetuates taste, elegance, flavor, flair and tradition</h1>
+      <p>Our <i>raison d'être</i> is to give you a moment to appreciate how Glamorous<br> Macarons & French Baking are.</p>
+    </div>
+    <div class="about-photos">
+      <div class="home-macaron">
+        <%= image_tag 'homepage_products-macaron.jpg', style:"max-height: 300px", class:"media" %>
+        <h2><a href="/pages/macaron">Macacron</a></h2>
+      </div>
+      <div class="home-croiss">
+        <%= image_tag 'croissanthome.JPG', style:"max-height: 300px", class:"media" %>
+        <h2><a href="/pages/homedelivery">French Baking</a></h2>
+      </div>
+      <div class="home-pastery">
+        <%= image_tag 'homepage-products-french-patisserie.jpg', style:"max-height: 300px", class:"media" %>
+         <h2><a href="/pages/homedelivery">French Gateau</a></h2>
+      </div>
     </div>
   </div>
-  </div>
-    <div class="moving-text">
-      <span id="banner-typed-text"></span>
-    </div>
-</div>
-</div>
-<div class="Content" data-type="content">
-  <div class="about-text">
-    <h1>Monsieur Macaron perpetuates taste, elegance, flavor, flair and tradition</h1>
-    <p>Our <i>raison d'être</i> is to give you a moment to appreciate how Glamorous<br> Macarons & French Baking are.</p>
-  </div>
-  <div class="about-photos">
-    <div class="home-macaron">
-      <%= image_tag 'homepage_products-macaron.jpg', style:"max-height: 300px" %>
-      <h2><a href="/pages/macaron">Macacron</a></h2>
-    </div>
-    <div class="home-croiss">
-      <%= image_tag 'croissanthome.JPG', style:"max-height: 300px"  %>
-      <h2><a href="/pages/homedelivery">French Baking</a></h2>
-    </div>
-    <div class="home-pastery">
-      <%= image_tag 'homepage-products-french-patisserie.jpg', style:"max-height: 300px"  %>
-       <h2><a href="/pages/homedelivery">French Gateau</a></h2>
-    </div>
-  </div>
-</div>
-
-
-<div class="parallax-2">
-</div>
-
-
+  <div class="parallax-2"></div>
   <div class="about-text">
     <h1>Where to Find Us</h1>
     <p>You can order fresh baking home delivered on Saturday mornings, visit us at the Sunday Farmer's Market,<br>or order in advance for your next event.</p>
@@ -59,7 +54,7 @@
        <h2><a href="/contact/new">Wedding Functions</a></h2>
     </div>
   </div>
-
+</div>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -77,35 +72,32 @@
   </div>
 </div>
 
-
-<script src="https://unpkg.com/scrollreveal"></script>
-
 <script>
-  // Get the modal
-var modal = document.getElementById("myModal");
+    // Get the modal
+  var modal = document.getElementById("myModal");
 
-// Get the button that opens the modal
-window.onload = function() {
-    setTimeout(function() {
-        document.getElementById('myModal').style.display = 'block';
-    }, 1500);
-}
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+  // Get the button that opens the modal
+  window.onload = function() {
+      setTimeout(function() {
+          document.getElementById('myModal').style.display = 'block';
+      }, 1500);
+  }
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
     modal.style.display = "none";
   }
-}
-  ScrollReveal().reveal('.headline');
-  ScrollReveal().reveal('.home-macaron', { delay: 300, distance: '250px', easing: 'ease-in'})
-  ScrollReveal().reveal('.home-croiss', { delay: 500, distance: '250px', easing: 'ease-in' })
-  ScrollReveal().reveal('.home-pastery', { delay: 700, distance: '250px', easing: 'ease-in' })
-  </script>
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+    ScrollReveal().reveal('.headline');
+    ScrollReveal().reveal('.home-macaron', { delay: 300, distance: '250px', easing: 'ease-in'})
+    ScrollReveal().reveal('.home-croiss', { delay: 500, distance: '250px', easing: 'ease-in' })
+    ScrollReveal().reveal('.home-pastery', { delay: 700, distance: '250px', easing: 'ease-in' })
+</script>

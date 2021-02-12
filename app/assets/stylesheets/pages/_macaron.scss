@@ -167,13 +167,13 @@ ul {
   align-items: center;
 }
 
-@media (max-width: 620px) {
+@media (max-width: 720px) {
   .chocolate-macarons {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr !important;
   }
 
-    .classic-macarons {
-    grid-template-columns: 1fr 1fr;
+  .classic-macarons {
+    grid-template-columns: 1fr 1fr !important;
   }
 
   .macaron {
@@ -186,12 +186,25 @@ ul {
     }
   }
   .macaron-title-word {
-    font-size: 65px;
-    top:30%;
+     font-size: 55px !important;
+    color: oldlace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    font-family: 'Ball';
 
   }
+
   .macaron-title-sentence {
-    display: none;
+    margin-top: 60px;
+    position: absolute;
+    font-size: 18px;
+    color: oldlace;
+    top: 25%;
+    left: 50%;
+    text-shadow: 1px 1px black;
+    transform: translate(-50%, -50%);
   }
   .container {
     padding-right: 0 !important;
@@ -213,6 +226,31 @@ ul {
     max-width: 100%;
     background-position: inherit;
     background-size: inherit;
+  }
+  }
+
+    @media (max-width: 1024px) {
+    .macaron-title-word {
+      font-size: 120px;
+    }
+
+    .macaron-title-sentence {
+      margin-top: 60px;
+      position: absolute;
+      font-size: 25px;
+      color: oldlace;
+      top: 33%;
+      left: 50%;
+      text-shadow: 1px 1px black;
+      transform: translate(-50%, -50%);
+    }
+
+      .chocolate-macarons {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+    .classic-macarons {
+    grid-template-columns: 1fr 1fr;
   }
   }
 
