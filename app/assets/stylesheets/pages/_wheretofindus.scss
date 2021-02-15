@@ -36,7 +36,7 @@
   transform: translateZ(-1px);
 }
 
-@media (max-width: 720px) {
+@media (min-width: 720px) {
   #map {
     height: 400px !important;
   }

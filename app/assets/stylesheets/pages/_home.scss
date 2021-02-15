@@ -275,11 +275,11 @@ body {
     }
 
     .about-photos {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr !important;
     }
 
      .about-photos-2 {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr !important;
     }
   }
 
