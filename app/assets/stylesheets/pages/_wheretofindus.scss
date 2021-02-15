@@ -44,11 +44,4 @@
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 1024px) {
-  #map {
-    height: 600px !important;
-  }
-  .find-us-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
+

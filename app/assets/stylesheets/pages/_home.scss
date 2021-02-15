@@ -275,10 +275,12 @@ body {
     }
 
     .about-photos {
+      grid-gap: 0px;
       grid-template-columns: 1fr !important;
     }
 
      .about-photos-2 {
+      grid-gap: 0px;
       grid-template-columns: 1fr !important;
     }
   }
