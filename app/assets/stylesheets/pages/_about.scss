@@ -111,13 +111,59 @@
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-  .about-image-3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.about-name {
+  text-align: center;
+  margin: 25px 0;
+  h1 {
+  font-size: 55px;
+  font-family:'Ball';
   }
+}
 
-  .about-2 {
-    grid-gap: 10px;
+.about-1 {
+  display:grid;
+  grid-gap:10px;
+  grid-template-columns: 1fr 2fr;
+  h5 {
+    font-size:35px;
   }
+  h6 {
+    color:#561B16;
+    margin-bottom:40px;
+    font-size:25px;
+  }
+  p {
+    font-size:19px;
+    font-weight:300;
+    margin-bottom:20px;
+  }
+}
+
+.about-2 {
+  margin-top:20px;
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  p {
+    font-size:19px;
+    font-weight:300;
+    margin-bottom:20px;
+  }
+}
+
+.about-image-2 {
+  display:flex;
+  justify-content: flex-end;
+}
+
+.about-3 {
+  display:grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 2fr;
+  p {
+    font-size:19px;
+    font-weight:300;
+    margin-bottom:20px;
+  }
+  margin-bottom: 100px;
+}
 }
