@@ -133,213 +133,213 @@
     margin-right: 3px;
   }
 
-@media (min-width: 576px) {
-      .parallax-home-delivery {
-      background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/homedelivery576.jpg");
-      min-height: 414px;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      max-width: 100%;
-      background-position: inherit;
-      background-size: inherit;
-    }
-  .home-delivery-info {
-    grid-template-columns: 1fr;
-  }
+// @media (min-width: 576px) {
+//       .parallax-home-delivery {
+//       background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/homedelivery576.jpg");
+//       min-height: 414px;
+//       background-attachment: fixed;
+//       background-repeat: no-repeat;
+//       max-width: 100%;
+//       background-position: inherit;
+//       background-size: inherit;
+//     }
+//   .home-delivery-info {
+//     grid-template-columns: 1fr;
+//   }
 
-  .home-title-word {
-    display:none;
-  }
+//   .home-title-word {
+//     display:none;
+//   }
 
-  .home-title-sentence {
-    display: none;
-  }
+//   .home-title-sentence {
+//     display: none;
+//   }
 
-  .home-delivery-price {
-    margin-top: 0;
-  }
+//   .home-delivery-price {
+//     margin-top: 0;
+//   }
 
-  .home-delivery-banner {
-    height:370px;
-  }
-  .home-delivery-text {
-    margin-top: 0;
-  }
-
-
- }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-    .parallax-home-delivery {
-      background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclose768.jpg");
-      min-height: 414px;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      max-width: 100%;
-      background-position: inherit;
-      background-size: inherit;
-    }
-  .home-delivery-info {
-    grid-template-columns: 1fr;
-  }
-
-  .home-title-word {
-    display:none;
-  }
-
-  .home-title-sentence {
-    display: none;
-  }
-
-  .home-delivery-price {
-    margin-top: 0;
-  }
-
-  .home-delivery-banner {
-    height:370px;
-  }
-  .home-delivery-text {
-    margin-top: 0;
-  }
-}
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  .parallax-home-delivery {
-  /* The image used */
-  background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/homedelivery1.jpg");
-  /* Set a specific height */
-  min-height: 720px;
-  width:100%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.home-title-word {
-    font-size: 135px;
-    color: oldlace;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 700px;
-    font-family: 'Ball';
-}
-
-.home-title-sentence {
-  margin-top: 60px;
-  position: absolute;
-  font-size:30px;
-  color: oldlace;
-  top: 60%;
-  left: 50%;
-  text-shadow: 1px 1px black;
-  transform: translate(-50%, -50%);
-}
+//   .home-delivery-banner {
+//     height:370px;
+//   }
+//   .home-delivery-text {
+//     margin-top: 0;
+//   }
 
 
-.home-delivery-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap:50px;
-  margin-bottom: 100px;
-}
+//  }
 
-.home-delivery-text {
-  margin-top: 80px;
-  h2 {
-    text-align: center;
-  }
-  h4 {
-    color:#5b1b14;
-    text-align:center;
-  }
-  p {
-    text-align:center;
-  }
-}
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) {
+//     .parallax-home-delivery {
+//       background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclose768.jpg");
+//       min-height: 414px;
+//       background-attachment: fixed;
+//       background-repeat: no-repeat;
+//       max-width: 100%;
+//       background-position: inherit;
+//       background-size: inherit;
+//     }
+//   .home-delivery-info {
+//     grid-template-columns: 1fr;
+//   }
 
-.number {
-  color:#5b1b14;
-}
+//   .home-title-word {
+//     display:none;
+//   }
+
+//   .home-title-sentence {
+//     display: none;
+//   }
+
+//   .home-delivery-price {
+//     margin-top: 0;
+//   }
+
+//   .home-delivery-banner {
+//     height:370px;
+//   }
+//   .home-delivery-text {
+//     margin-top: 0;
+//   }
+// }
+
+// // Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) {
+//   .parallax-home-delivery {
+//   /* The image used */
+//   background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/homedelivery1.jpg");
+//   /* Set a specific height */
+//   min-height: 720px;
+//   width:100%;
+//   /* Create the parallax scrolling effect */
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+
+// .home-title-word {
+//     font-size: 135px;
+//     color: oldlace;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 700px;
+//     font-family: 'Ball';
+// }
+
+// .home-title-sentence {
+//   margin-top: 60px;
+//   position: absolute;
+//   font-size:30px;
+//   color: oldlace;
+//   top: 60%;
+//   left: 50%;
+//   text-shadow: 1px 1px black;
+//   transform: translate(-50%, -50%);
+// }
+
+
+// .home-delivery-info {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   grid-gap:50px;
+//   margin-bottom: 100px;
+// }
+
+// .home-delivery-text {
+//   margin-top: 80px;
+//   h2 {
+//     text-align: center;
+//   }
+//   h4 {
+//     color:#5b1b14;
+//     text-align:center;
+//   }
+//   p {
+//     text-align:center;
+//   }
+// }
+
+// .number {
+//   color:#5b1b14;
+// }
 
 
 
-.home-delivery-price-box {
-  h3 {
-    text-shadow: 1px 1px black;
-    letter-spacing: 2px;
-    font-family: 'Lato';
-    font-size: 30px;
+// .home-delivery-price-box {
+//   h3 {
+//     text-shadow: 1px 1px black;
+//     letter-spacing: 2px;
+//     font-family: 'Lato';
+//     font-size: 30px;
 
-  }
-  text-align: center;
-  color:white;
-  background: linear-gradient(1deg, #820204 0%, #5b1b14 100%);  border: 2px solid #820204;
-  border-radius: 5px 5px 5px 5px;
-  padding: 50px 20px;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
-}
+//   }
+//   text-align: center;
+//   color:white;
+//   background: linear-gradient(1deg, #820204 0%, #5b1b14 100%);  border: 2px solid #820204;
+//   border-radius: 5px 5px 5px 5px;
+//   padding: 50px 20px;
+//   box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+// }
 
 
-.free-delivery {
- letter-spacing: 1px;
- margin-bottom: 35px;
-}
+// .free-delivery {
+//  letter-spacing: 1px;
+//  margin-bottom: 35px;
+// }
 
-.home-delivery-price {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 90px;
-}
+// .home-delivery-price {
+//     display: flex;
+//     justify-content: flex-end;
+//     align-items: center;
+//     margin-top: 90px;
+// }
 
-.home-delivery-photos {
-  display:flex;
-  justify-content:center;
-  img{
-    margin-left: 5px;
-  }
-}
+// .home-delivery-photos {
+//   display:flex;
+//   justify-content:center;
+//   img{
+//     margin-left: 5px;
+//   }
+// }
 
-.signup-info {
-  margin-top:15px;
-  font-size: 12px;
-  font-style: italic;
-}
+// .signup-info {
+//   margin-top:15px;
+//   font-size: 12px;
+//   font-style: italic;
+// }
 
-.signup {
-  border-radius: 5px 5px 5px 5px;
-  background-color: white;
-  border:1px solid #5b1b14;
-  color:#5b1b14;
-  padding: 10px;
-  font-family: 'Lato', sans-serif;
-  margin: 25px 0;
-  letter-spacing: 1px;
-}
+// .signup {
+//   border-radius: 5px 5px 5px 5px;
+//   background-color: white;
+//   border:1px solid #5b1b14;
+//   color:#5b1b14;
+//   padding: 10px;
+//   font-family: 'Lato', sans-serif;
+//   margin: 25px 0;
+//   letter-spacing: 1px;
+// }
 
-.signup:hover{
-  background-color:white;
-  opacity: .4;
-  color:#5b1b14;
-  border: 1px solid white;
-}
+// .signup:hover{
+//   background-color:white;
+//   opacity: .4;
+//   color:#5b1b14;
+//   border: 1px solid white;
+// }
 
-  a {
-    text-decoration: none;
-  }
-  a:hover{
-    color:#5b1b14;
-    text-decoration: none;
-  }
+//   a {
+//     text-decoration: none;
+//   }
+//   a:hover{
+//     color:#5b1b14;
+//     text-decoration: none;
+//   }
 
-  .fas {
-    margin-right: 3px;
-  }
-}
+//   .fas {
+//     margin-right: 3px;
+//   }
+// }
 
 

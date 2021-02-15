@@ -167,272 +167,272 @@ ul {
   align-items: center;
 }
 
-@media (min-width: 576px) {
+// @media (min-width: 576px) {
 
-  .chocolate-macarons {
-    grid-template-columns: 1fr 1fr !important;
-  }
+//   .chocolate-macarons {
+//     grid-template-columns: 1fr 1fr !important;
+//   }
 
-  .classic-macarons {
-    grid-template-columns: 1fr 1fr !important;
-  }
+//   .classic-macarons {
+//     grid-template-columns: 1fr 1fr !important;
+//   }
 
-  .macaron {
-    padding: 2px;
-  }
+//   .macaron {
+//     padding: 2px;
+//   }
 
-  .macaron-text {
-    h3 {
-      margin: 0;
-    }
-  }
-  .macaron-title-word {
-    display: none;
-  }
+//   .macaron-text {
+//     h3 {
+//       margin: 0;
+//     }
+//   }
+//   .macaron-title-word {
+//     display: none;
+//   }
 
-  .macaron-title-sentence {
-    display: none;
-  }
-  .container {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-  }
+//   .macaron-title-sentence {
+//     display: none;
+//   }
+//   .container {
+//     padding-right: 0 !important;
+//     padding-left: 0 !important;
+//   }
 
-  .macaron-prices {
-    height: 900px;
-  }
-  p.macaron-info {
-    margin-top: 0;
-  }
+//   .macaron-prices {
+//     height: 900px;
+//   }
+//   p.macaron-info {
+//     margin-top: 0;
+//   }
 
-  .parallax-macaron {
-    background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclose2-576.jpg");
-    min-height: 414px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    background-position: inherit;
-    background-size: inherit;
-  }
-}
-
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-.chocolate-macarons {
-    grid-template-columns: 1fr 1fr !important;
-  }
-
-  .classic-macarons {
-    grid-template-columns: 1fr 1fr !important;
-  }
-
-  .macaron {
-    padding: 2px;
-  }
-
-  .macaron-text {
-    h3 {
-      margin: 0;
-    }
-  }
-  .macaron-title-word {
-    display: none;
-  }
-
-  .macaron-title-sentence {
-    display:none;
-  }
-  .container {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-  }
-
-  .macaron-prices {
-    height: 900px;
-  }
-  p.macaron-info {
-    margin-top: 0;
-  }
-
-  .parallax-macaron {
-    background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclose2-768.jpg");
-    min-height: 414px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    background-position: inherit;
-    background-size: inherit;
-  }
-}
-
-@media (min-width: 1200px) {
-  .parallax-macaron {
-  /* The image used */
-  background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclose2.jpg");
-
-  /* Set a specific height */
-  min-height: 720px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.parallax-macaron-2 {
-  /* The image used */
-  background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/chocolate.jpg");
-
-  /* Set a specific height */
-  min-height: 700px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.classic-macarons {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.chocolate-macarons {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-
-.macaron-title-word {
-  font-size: 135px;
-  color: oldlace;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 700px;
-  font-family: 'Ball';
-}
-
-.macaron-title-sentence {
-  margin-top: 60px;
-  position: absolute;
-  font-size:30px;
-  color: oldlace;
-  top: 60%;
-  left: 50%;
-  text-shadow: 1px 1px black;
-  transform: translate(-50%, -50%);
-}
+//   .parallax-macaron {
+//     background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclose2-576.jpg");
+//     min-height: 414px;
+//     background-attachment: fixed;
+//     background-repeat: no-repeat;
+//     max-width: 100%;
+//     background-position: inherit;
+//     background-size: inherit;
+//   }
+// }
 
 
-.macaron-text {
-  text-align: center;
-  h3 {
-    text-align:center;
-    font-size:35px;
-    color: #561B16;
-    margin-left:100px;
-  }
-}
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) {
+// .chocolate-macarons {
+//     grid-template-columns: 1fr 1fr !important;
+//   }
 
-.macaron {
-  padding: 10px;
-}
+//   .classic-macarons {
+//     grid-template-columns: 1fr 1fr !important;
+//   }
 
-.macaron-info {
-  font-size:20px;
-  margin: 40px 0;
-}
+//   .macaron {
+//     padding: 2px;
+//   }
 
-.bold {
-  color: #561B16;
-}
+//   .macaron-text {
+//     h3 {
+//       margin: 0;
+//     }
+//   }
+//   .macaron-title-word {
+//     display: none;
+//   }
 
-.macaron-prices {
-  max-width: 100%;
-  height: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+//   .macaron-title-sentence {
+//     display:none;
+//   }
+//   .container {
+//     padding-right: 0 !important;
+//     padding-left: 0 !important;
+//   }
 
-.prices-box {
-  color: #5b1b14;
-  background-color: white;
-  border: 2px solid #5b1b14;
-  padding: 30px;
-  border-radius: 5px;
-  box-shadow: 2px 2px rgba(100, 100, 100, 0.2);
-  margin-top: 10px;
-}
+//   .macaron-prices {
+//     height: 900px;
+//   }
+//   p.macaron-info {
+//     margin-top: 0;
+//   }
 
-.prices-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+//   .parallax-macaron {
+//     background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclose2-768.jpg");
+//     min-height: 414px;
+//     background-attachment: fixed;
+//     background-repeat: no-repeat;
+//     max-width: 100%;
+//     background-position: inherit;
+//     background-size: inherit;
+//   }
+// }
 
-  padding: 30px;
-  grid-gap: 10px;
+// @media (min-width: 1200px) {
+//   .parallax-macaron {
+//   /* The image used */
+//   background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclose2.jpg");
 
-  border-radius: 5px;
-  text-align: center;
-  margin-top: 10px;
-  li {
-    list-style-type:none;
-  }
-}
+//   /* Set a specific height */
+//   min-height: 720px;
 
-.prices-top-info {
-  h3 {
-    text-shadow: 1px 1px black;
-    letter-spacing: 2px;
-    font-size: 40px;
-    h6 {
-    letter-spacing: 2px;
-    font-family: 'Lato';
-    }
-  }
-  text-align: center;
-  p {
-    margin-bottom: 0;
-  }
-}
+//   /* Create the parallax scrolling effect */
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
 
-.one-macaron {
-  font-size:10px;
-}
+// .parallax-macaron-2 {
+//   /* The image used */
+//   background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/chocolate.jpg");
 
-.test {
-  background-color: #5b1b14;
-  max-width: 215px;
-}
+//   /* Set a specific height */
+//   min-height: 700px;
 
-.buy-now-button {
-  border-radius: 5px 5px 5px 5px;
-  background-color: white;
-  border: 1px solid #5b1b14;
-  color:#5b1b14;
-  padding: 10px 30px;
-  font-family: 'Lato', sans-serif;
-  margin: 25px 0;
-  letter-spacing: 1px;
-}
+//   /* Create the parallax scrolling effect */
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
 
-.buy-now-button:hover{
-  background-color:#5b1b14;
-  color:white;
-  border: 1px solid #5b1b14;
-}
+// .classic-macarons {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+// }
 
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-}
+// ul {
+//   list-style-type: none;
+//   padding: 0;
+// }
+
+// .chocolate-macarons {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+// }
+
+// .macaron-title-word {
+//   font-size: 135px;
+//   color: oldlace;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 700px;
+//   font-family: 'Ball';
+// }
+
+// .macaron-title-sentence {
+//   margin-top: 60px;
+//   position: absolute;
+//   font-size:30px;
+//   color: oldlace;
+//   top: 60%;
+//   left: 50%;
+//   text-shadow: 1px 1px black;
+//   transform: translate(-50%, -50%);
+// }
+
+
+// .macaron-text {
+//   text-align: center;
+//   h3 {
+//     text-align:center;
+//     font-size:35px;
+//     color: #561B16;
+//     margin-left:100px;
+//   }
+// }
+
+// .macaron {
+//   padding: 10px;
+// }
+
+// .macaron-info {
+//   font-size:20px;
+//   margin: 40px 0;
+// }
+
+// .bold {
+//   color: #561B16;
+// }
+
+// .macaron-prices {
+//   max-width: 100%;
+//   height: 700px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+// .prices-box {
+//   color: #5b1b14;
+//   background-color: white;
+//   border: 2px solid #5b1b14;
+//   padding: 30px;
+//   border-radius: 5px;
+//   box-shadow: 2px 2px rgba(100, 100, 100, 0.2);
+//   margin-top: 10px;
+// }
+
+// .prices-grid {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr 1fr;
+
+//   padding: 30px;
+//   grid-gap: 10px;
+
+//   border-radius: 5px;
+//   text-align: center;
+//   margin-top: 10px;
+//   li {
+//     list-style-type:none;
+//   }
+// }
+
+// .prices-top-info {
+//   h3 {
+//     text-shadow: 1px 1px black;
+//     letter-spacing: 2px;
+//     font-size: 40px;
+//     h6 {
+//     letter-spacing: 2px;
+//     font-family: 'Lato';
+//     }
+//   }
+//   text-align: center;
+//   p {
+//     margin-bottom: 0;
+//   }
+// }
+
+// .one-macaron {
+//   font-size:10px;
+// }
+
+// .test {
+//   background-color: #5b1b14;
+//   max-width: 215px;
+// }
+
+// .buy-now-button {
+//   border-radius: 5px 5px 5px 5px;
+//   background-color: white;
+//   border: 1px solid #5b1b14;
+//   color:#5b1b14;
+//   padding: 10px 30px;
+//   font-family: 'Lato', sans-serif;
+//   margin: 25px 0;
+//   letter-spacing: 1px;
+// }
+
+// .buy-now-button:hover{
+//   background-color:#5b1b14;
+//   color:white;
+//   border: 1px solid #5b1b14;
+// }
+
+// .button {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+// }

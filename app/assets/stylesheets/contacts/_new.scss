@@ -90,19 +90,19 @@ abbr{
     justify-content: center;
   }
 
-@media (max-width: 576px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
+// @media (max-width: 576px) {
+//   .contact-grid {
+//     grid-template-columns: 1fr;
+//   }
 
-  .contact-form label {
-    font-size: 12px;
-  }
-}
+//   .contact-form label {
+//     font-size: 12px;
+//   }
+// }
 
-@media (max-width: 992px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-}
+// @media (max-width: 992px) {
+//   .contact-grid {
+//     grid-template-columns: 1fr;
+//   }
+// }
 
