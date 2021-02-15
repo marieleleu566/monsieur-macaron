@@ -243,7 +243,7 @@ body {
 
 @media (max-width: 576px) {
 .parallax {
-      background-image: url('https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclose576.jpg');
+      background-image: url('https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclose576.jpg') !important;
       min-height: 414px;
       background-attachment: fixed;
       background-repeat: no-repeat;
@@ -270,11 +270,11 @@ body {
     }
 
     .about-photos {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr !important;
     }
 
      .about-photos-2 {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr !important;
     }
   }
 
@@ -320,7 +320,7 @@ body {
 
 // Large devices (desktops, 992px and up)
 @media (max-width: 992px) {
-      .parallax {
+    .parallax {
       background-image: url('https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaroncloseoverlay.jpg');
       min-height: 414px;
       background-attachment: fixed;
