@@ -36,7 +36,7 @@
   transform: translateZ(-1px);
 }
 
-@media (max-width: 576px) {
+@media (min-width: 576px) {
   #map {
     height: 400px !important;
   }
@@ -44,7 +44,7 @@
     grid-template-columns: 1fr;
   }
 }
-@media (max-width: 922px) {
+@media (min-width: 922px) {
   #map {
     height: 600px !important;
   }

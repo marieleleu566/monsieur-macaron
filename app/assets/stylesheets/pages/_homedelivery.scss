@@ -135,7 +135,7 @@
 
 @media (max-width: 576px) {
       .parallax-home-delivery {
-      background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/homedelivery576.jpg");
+      background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/homedelivery576.jpg") !important;
       min-height: 414px;
       background-attachment: fixed;
       background-repeat: no-repeat;
@@ -144,7 +144,7 @@
       background-size: inherit;
     }
   .home-delivery-info {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 
   .home-title-word {

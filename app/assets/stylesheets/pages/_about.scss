@@ -57,13 +57,13 @@
 
 @media (max-width: 576px) {
   .about-1 {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
     .about-2 {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
     .about-3 {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
   .about-image-2, .about-image-1, .about-image-3 {
     display: flex;
