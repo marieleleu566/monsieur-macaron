@@ -167,8 +167,7 @@ ul {
   align-items: center;
 }
 
-@media (max-width: 576px) {
-
+@media (max-width: 720px) {
   .chocolate-macarons {
     grid-template-columns: 1fr 1fr !important;
   }
@@ -187,11 +186,25 @@ ul {
     }
   }
   .macaron-title-word {
-    display: none;
+     font-size: 55px !important;
+    color: oldlace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    font-family: 'Ball';
+
   }
 
   .macaron-title-sentence {
-    display: none;
+    margin-top: 60px;
+    position: absolute;
+    font-size: 18px;
+    color: oldlace;
+    top: 25%;
+    left: 50%;
+    text-shadow: 1px 1px black;
+    transform: translate(-50%, -50%);
   }
   .container {
     padding-right: 0 !important;
@@ -206,7 +219,7 @@ ul {
   }
 
   .parallax-macaron {
-    background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclose2-576.jpg");
+    background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclose2media.jpg");
     min-height: 414px;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -214,54 +227,22 @@ ul {
     background-position: inherit;
     background-size: inherit;
   }
-}
-
-
-// Medium devices (tablets, 768px and up)
-@media (max-width: 768px) {
-.chocolate-macarons {
-    grid-template-columns: 1fr 1fr !important;
   }
 
-  .classic-macarons {
-    grid-template-columns: 1fr 1fr !important;
-  }
-
-  .macaron {
-    padding: 2px;
-  }
-
-  .macaron-text {
-    h3 {
-      margin: 0;
+    @media (max-width: 1024px) {
+    .macaron-title-word {
+      font-size: 120px;
     }
-  }
-  .macaron-title-word {
-    display: none;
+
+    .macaron-title-sentence {
+      display:none;
+    }
+
+      .chocolate-macarons {
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .macaron-title-sentence {
-    display:none;
+    .classic-macarons {
+    grid-template-columns: 1fr 1fr;
   }
-  .container {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
   }
-
-  .macaron-prices {
-    height: 900px;
-  }
-  p.macaron-info {
-    margin-top: 0;
-  }
-
-  .parallax-macaron {
-    background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclose2-768.jpg");
-    min-height: 414px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    max-width: 100%;
-    background-position: inherit;
-    background-size: inherit;
-  }
-}
