@@ -241,9 +241,87 @@ body {
     margin-right: 3px;
   }
 
-  @media (max-width: 720px) {
-    .parallax {
-      background-image: url('https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclosemedia.jpg');
+@media (min-width: 576px) {
+.parallax {
+      background-image: url('https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclose576.jpg');
+      min-height: 414px;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      max-width: 100%;
+      background-position: inherit;
+      background-size: inherit;
+    }
+
+    .moving-text {
+      display:none;
+    }
+
+    .display-text {
+      display:none;
+    }
+
+    .mr-title {
+      h1 {
+        font-size: 50px !important;
+      }
+    }
+    .about-text {
+      margin: 0;
+    }
+
+    .about-photos {
+      grid-template-columns: 1fr;
+    }
+
+     .about-photos-2 {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .parallax {
+      background-image: url('https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclose768.jpg');
+      min-height: 414px;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      max-width: 100%;
+      background-position: inherit;
+      background-size: inherit;
+    }
+
+    .moving-text {
+      display:none;
+      left: 15% !important;
+    }
+
+    .display-text {
+      display:none;
+    }
+
+    .mr-title {
+      h1 {
+        display:none;
+      }
+    }
+    .about-text {
+      margin: 0;
+    }
+
+    .about-photos {
+      grid-template-columns: 1fr;
+    }
+
+     .about-photos-2 {
+      grid-template-columns: 1fr;
+    }
+  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+      .parallax {
+      background-image: url('https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaroncloseoverlay.jpg');
       min-height: 414px;
       background-attachment: fixed;
       background-repeat: no-repeat;
@@ -270,7 +348,7 @@ body {
 
     .mr-title {
       h1 {
-        font-size: 50px !important;
+        display:none;
       }
     }
     .about-text {
@@ -284,9 +362,10 @@ body {
      .about-photos-2 {
       grid-template-columns: 1fr;
     }
-  }
+}
 
- @media (max-width: 1024px) {
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
       .about-photos {
       grid-template-columns: 1fr 1fr 1fr ;
     }
@@ -308,4 +387,4 @@ body {
     .moving-text {
       left: 18%;
     }
- }
+}

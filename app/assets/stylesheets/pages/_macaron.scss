@@ -254,3 +254,101 @@ ul {
   }
   }
 
+@media (min-width: 576px) {
+
+  .chocolate-macarons {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .classic-macarons {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .macaron {
+    padding: 2px;
+  }
+
+  .macaron-text {
+    h3 {
+      margin: 0;
+    }
+  }
+  .macaron-title-word {
+    display: none;
+  }
+
+  .macaron-title-sentence {
+    display: none;
+  }
+  .container {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .macaron-prices {
+    height: 900px;
+  }
+  p.macaron-info {
+    margin-top: 0;
+  }
+
+  .parallax-macaron {
+    background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclose2-576.jpg");
+    min-height: 414px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-position: inherit;
+    background-size: inherit;
+  }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+.chocolate-macarons {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .classic-macarons {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .macaron {
+    padding: 2px;
+  }
+
+  .macaron-text {
+    h3 {
+      margin: 0;
+    }
+  }
+  .macaron-title-word {
+    display: none;
+  }
+
+  .macaron-title-sentence {
+    display:none;
+  }
+  .container {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+
+  .macaron-prices {
+    height: 900px;
+  }
+  p.macaron-info {
+    margin-top: 0;
+  }
+
+  .parallax-macaron {
+    background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclose2-768.jpg");
+    min-height: 414px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-position: inherit;
+    background-size: inherit;
+  }
+   }

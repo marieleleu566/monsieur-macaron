@@ -133,9 +133,9 @@
     margin-right: 3px;
   }
 
-@media (max-width: 720px) {
-  .parallax-home-delivery {
-      background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/homedelivery1media.jpg");
+@media (min-width: 576px) {
+      .parallax-home-delivery {
+      background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/homedelivery576.jpg");
       min-height: 414px;
       background-attachment: fixed;
       background-repeat: no-repeat;
@@ -148,24 +148,11 @@
   }
 
   .home-title-word {
-    font-size: 55px !important;
-    color: oldlace;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 250px;
-    font-family: 'Ball';
+    display:none;
   }
 
   .home-title-sentence {
-    margin-top: 60px;
-    position: absolute;
-    font-size: 20px;
-    color: oldlace;
-    top: 29%;
-    left: 50%;
-    text-shadow: 1px 1px black;
-    transform: translate(-50%, -50%);
+    display: none;
   }
 
   .home-delivery-price {
@@ -178,10 +165,50 @@
   .home-delivery-text {
     margin-top: 0;
   }
+
+
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .parallax-home-delivery {
+      background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclose768.jpg");
+      min-height: 414px;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      max-width: 100%;
+      background-position: inherit;
+      background-size: inherit;
+    }
+  .home-delivery-info {
+    grid-template-columns: 1fr;
   }
 
-  @media (max-width: 1024px) {
-    .home-title-word {
+  .home-title-word {
+    display:none;
+  }
+
+  .home-title-sentence {
+    display: none;
+  }
+
+  .home-delivery-price {
+    margin-top: 0;
+  }
+
+  .home-delivery-banner {
+    height:370px;
+  }
+  .home-delivery-text {
+    margin-top: 0;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .home-title-word {
       font-size: 120px;
   }
-  }
+}
+
+

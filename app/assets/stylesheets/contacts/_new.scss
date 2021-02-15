@@ -90,7 +90,7 @@ abbr{
     justify-content: center;
   }
 
-@media (max-width: 720px) {
+@media (max-width: 576px) {
   .contact-grid {
     grid-template-columns: 1fr;
   }
@@ -100,7 +100,7 @@ abbr{
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
   .contact-grid {
     grid-template-columns: 1fr;
   }
