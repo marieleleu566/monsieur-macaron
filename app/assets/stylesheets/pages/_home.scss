@@ -241,42 +241,42 @@ body {
     margin-right: 3px;
   }
 
-// @media (min-width: 576px) {
-// .parallax {
-//       background-image: url('https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclose576.jpg');
-//       min-height: 414px;
-//       background-attachment: fixed;
-//       background-repeat: no-repeat;
-//       max-width: 100%;
-//       background-position: inherit;
-//       background-size: inherit;
-//     }
+@media (min-width: 576px) {
+.parallax {
+      background-image: url('https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclose576.jpg');
+      min-height: 414px;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      max-width: 100%;
+      background-position: inherit;
+      background-size: inherit;
+    }
 
-//     .moving-text {
-//       display:none;
-//     }
+    .moving-text {
+      display:none;
+    }
 
-//     .display-text {
-//       display:none;
-//     }
+    .display-text {
+      display:none;
+    }
 
-//     .mr-title {
-//       h1 {
-//         font-size: 50px !important;
-//       }
-//     }
-//     .about-text {
-//       margin: 0;
-//     }
+    .mr-title {
+      h1 {
+        font-size: 50px !important;
+      }
+    }
+    .about-text {
+      margin: 0;
+    }
 
-//     .about-photos {
-//       grid-template-columns: 1fr;
-//     }
+    .about-photos {
+      grid-template-columns: 1fr;
+    }
 
-//      .about-photos-2 {
-//       grid-template-columns: 1fr;
-//     }
-//   }
+     .about-photos-2 {
+      grid-template-columns: 1fr;
+    }
+  }
 
 
 // // Medium devices (tablets, 768px and up)
