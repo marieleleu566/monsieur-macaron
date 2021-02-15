@@ -366,7 +366,19 @@ body {
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
-      .about-photos {
+  .parallax {
+  /* The image used */
+  background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaroncloseoverlay.jpg");
+  /* Set a specific height */
+  min-height: 720px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width:100%;
+}
+    .about-photos {
       grid-template-columns: 1fr 1fr 1fr ;
     }
 
