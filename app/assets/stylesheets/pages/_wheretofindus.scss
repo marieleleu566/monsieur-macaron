@@ -36,7 +36,7 @@
   transform: translateZ(-1px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   #map {
     height: 400px !important;
   }
@@ -45,3 +45,11 @@
   }
 }
 
+@media (max-width: 900px) {
+  #map {
+    height: 400px !important;
+  }
+  .find-us-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
