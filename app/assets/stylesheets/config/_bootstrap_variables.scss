@@ -20,3 +20,10 @@ $warning:    $orange;
 // Buttons & inputs' radius
 
 
+@media (min-width: 576px) {
+
+.navbar-expand-sm .navbar-collapse {
+     display: flex ;
+     flex-basis: auto;
+}
+}

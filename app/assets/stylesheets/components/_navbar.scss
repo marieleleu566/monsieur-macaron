@@ -26,39 +26,156 @@
     color: grey;
 }
 
+// @media (min-width: 576px) {
+// .navbar-expand-sm .navbar-toggler {
+//     display: none;
+// }
+// .navbar-expand-sm .navbar-collapse {
+//     display: flex !important;
+//     flex-basis: auto;
+// }
+// }
+// @media (min-width: 768px) {
+// .navbar-lewagon .navbar-collapse {
+//     flex-grow: 0;
+// }
+// .navbar-collapse {
+//     flex-basis: 100%;
+//     flex-grow: 1;
+//     align-items: center;
+// }
+
+// .navbar-lewagon {
+//     justify-content: space-between;
+//     background: white;
+//     font-family: "Lato", sans-serif;
+//     letter-spacing: 1px;
+//     z-index: 3;
+// }
+// .navbar {
+//     position: relative;
+//     display: flex;
+//     flex-wrap: wrap;
+//     align-items: center;
+//     justify-content: space-between;
+//     padding: 0.5rem 1rem;
+// }
+// .navbar-light .navbar-brand {
+//     color: rgba(0, 0, 0, 0.9);
+// }
+
+// .navbar-brand {
+//     display: inline-block;
+//     padding-top: 0.3125rem;
+//     padding-bottom: 0.3125rem;
+//     margin-right: 1rem;
+//     font-size: 1.25rem;
+//     line-height: inherit;
+//     white-space: nowrap;
+// }
+// .navbar-lewagon .navbar-collapse {
+//     flex-grow: 0;
+// }
+// .navbar-collapse {
+//     flex-basis: 100% !important;
+//     flex-grow: 1 !important;
+//     align-items: center;
+// }
+// .mr-auto, .mx-auto {
+//     margin-right: auto !important;
+// }
+// .navbar-nav {
+//     display: flex !important;
+//     flex-direction: column !important;
+//     padding-left: 0;
+//     margin-bottom: 0;
+//     list-style: none;
+// }
+// .navbar-nav .nav-link {
+//     padding-right: 0;
+//     padding-left: 0;
+// }
+// .nav-link {
+//     margin-right: 15px;
+// }
+// .nav-link {
+//     display: block;
+//     padding: 0.5rem 1rem;
+// }
+// .navbar-expand-sm .navbar-toggler {
+//     display: block !important;
+//     }
+//     .navbar-collapse {
+//         border-top: 1px solid transparent;
+//         box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+//         flex-basis: 100%;
+//         flex-grow: 1;
+//         align-items: center;
+//     }
+
+// }
+
 @media (max-width: 768px) {
-    .navbar-header {
-        float: none;
+
+.navbar-expand-sm .navbar-collapse {
+    display: block !important;
+    flex-basis: 100% !important;
+}
+.navbar-expand-sm {
+    flex-flow: wrap !important;
+    justify-content: none;
+}
+// .navbar-expand-sm {
+//     flex-flow: row nowrap; */
+//     justify-content: flex-start;
+// }
+#navbarSupportedContent {
+  .navbar-lewagon .navbar-collapse {
+    flex-grow: 0;
+}
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+}
+.navbar-expand-sm .navbar-collapse {
+    display: block !important;
+
+}
+    .mr-auto, .mx-auto {
+    margin-right: auto !important;
     }
-    .navbar-toggle {
-        display: block;
+    .navbar-nav {
+    display: flex !important;
+    flex-direction: column !important;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    }
+}
+    .navbar-expand-sm .navbar-toggler {
+    display: block !important;
     }
     .navbar-collapse {
         border-top: 1px solid transparent;
         box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: center;
     }
+    // .navbar-expand-sm .navbar-collapse {
+    // display: flex !important;
+    // flex-basis: auto;
+    // }
     .navbar-collapse.collapse {
-        display: none!important;
+        display: inherit!important;
     }
-    .navbar-nav {
-        float: none!important;
-        margin: 7.5px -15px;
+    .navbar-lewagon .navbar-collapse {
+      flex-grow: 0 !important;
     }
-    .navbar-nav>li {
-        float: none;
+
+    .collapse:not(.show) {
+        display: none !important;
     }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .navbar-text {
-        float: none;
-        margin: 15px 0;
-    }
-    .navbar-collapse.collapse.in {
-        display: block!important;
-    }
-    .collapsing {
-        overflow: hidden!important;
-    }
+
 }
