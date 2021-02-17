@@ -15,17 +15,19 @@ body {
   display: flex;
   flex-direction: column;
 }
-.content {
-  flex: 1 0 auto;
-}
+
+// .content {
+//   flex: 1 0 auto;
+// }
+
 .footer {
   flex-shrink: 0;
 }
 
-.banner {
-  display: flex;
-  justify-content: center;
-}
+// .banner {
+//   display: flex;
+//   justify-content: center;
+// }
 
 .title {
   h1 {
@@ -242,7 +244,7 @@ body {
   }
 
 // Medium devices (tablets, 768px and up)
-  @media (max-width: 720px) {
+  @media (max-width: 768px) {
     .parallax {
       background-image: url('https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclosemedia.jpg');
       min-height: 414px;
