@@ -246,6 +246,19 @@ body {
       background-size: inherit;
     }
 
+    .parallax-2 {
+    /* The image used */
+    background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclosemedia.jpg");
+    /* Set a specific height */
+    min-height: 500px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width:100%;
+  }
+
     .media {
       display:initial;
 
