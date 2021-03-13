@@ -38,7 +38,7 @@
             <%= f.label 'Orders & Questions', required: true %>
             <%= f.text_area(:message, rows: 3, class:"form-control")%> <br>
           </div>
-          <div class="g-recaptcha" data-sitekey="6LdD330aAAAAAMFED9qQKKpJ0mzGdDxk6t0XHfIh"></div>
+          <%= recaptcha_tags %>
           <div class="send-button">
             <%= f.submit 'SEND', class: "send-btn" %>
           </div>
