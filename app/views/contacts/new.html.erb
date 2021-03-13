@@ -6,8 +6,8 @@
         <div class="contact-image">
           <%= image_tag 'macaron-contact.jpg' %>
         </div>
-        <p> We now deliver Macarons across the Nth. Island!<br>For Macaron shipping & prices please see details <a href="pages/macaron">here.</a><br><br>
-        For Saturday Morning Home Delivery<br> please see details <a href="pages/homedelivery">here.</a><br><br>
+        <p> We now deliver Macarons across the Nth. Island!<br>For Macaron shipping & prices please see details <%= link_to "here.", pages_homedelivery_path %><br><br>
+        For Saturday Morning Home Delivery<br> please see details <%= link_to "here.", pages_macaron_path %><br><br>
         For all general enquiries and Maracon orders, or enquiries about Corporate Functions & Wedding Catering please fill out the form.</p>
       </div>
       <div class="contact-form">
@@ -38,6 +38,7 @@
             <%= f.label 'Orders & Questions', required: true %>
             <%= f.text_area(:message, rows: 3, class:"form-control")%> <br>
           </div>
+          <div class="g-recaptcha" data-sitekey="6LdD330aAAAAAMFED9qQKKpJ0mzGdDxk6t0XHfIh"></div>
           <div class="send-button">
             <%= f.submit 'SEND', class: "send-btn" %>
           </div>

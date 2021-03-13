@@ -34,6 +34,8 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'mail_form'
 
+gem "recaptcha", require: "recaptcha/rails"
+
 group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
