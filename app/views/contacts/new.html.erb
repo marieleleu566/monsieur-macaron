@@ -29,6 +29,7 @@
           <div class="form-row">
             <div class="col">
               <%= f.input :email, label:'Your Email', required: false %> <br>
+              <%= f.input :email2, label:'Your Email', required: false, class:'bot-email'%>
             </div>
             <div class="col">
               <%= f.input :type, collection:["General Questions & Messages", "Macaron Orders Events", "Weddings & Functions"], label:'How can we help?', error: 'Please select an option from the list', required: true%> <br>

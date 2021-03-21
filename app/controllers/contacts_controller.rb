@@ -13,11 +13,13 @@ class ContactsController < ApplicationController
       flash.now[:error] = 'Cannot send message'
       render :new
     end
+      redirect_to root_path if @contact[:email2].present?
+    end
   end
 
   private
 
   def contact_params
-    params.require(:contact).permit(:email, :firstname, :lastname, :phone, :message, :type)
+    params.require(:contact).permit(:email, :email2, :firstname, :lastname, :phone, :message, :type)
   end
 end
