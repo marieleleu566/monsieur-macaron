@@ -12,8 +12,8 @@ class Contact < MailForm::Base
     {
       subject: "Monsieur Macaron Contact Form",
       to: "macaron.monsieur@gmail.com",
-      from: %("#{name}" <#{email}>),
-      reply_to: %("#{name}" <#{email}>)
+      from: %("#{firstname}" <#{email}>),
+      reply_to: %("#{firstname}" <#{email}>)
     }
   end
 end
