@@ -58,7 +58,11 @@
   color:#5b1b14;
 }
 
-
+.homedelphoto {
+  position: relative;
+  width: 400px;
+  height: 100%;
+}
 
 .home-delivery-price-box {
   h3 {
@@ -84,7 +88,7 @@
 
 .home-delivery-price {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     margin-top: 90px;
 }
@@ -104,21 +108,21 @@
 }
 
 .signup {
-  border-radius: 5px 5px 5px 5px;
-  background-color: white;
+  box-shadow: 2px 2px;
+  left: 30%;
+  bottom: 100px;
+  background-color:#F0E6D3;
   border:1px solid #5b1b14;
   color:#5b1b14;
   padding: 10px;
   font-family: 'Lato', sans-serif;
   margin: 25px 0;
   letter-spacing: 1px;
+  position: absolute;
 }
 
 .signup:hover{
-  background-color:white;
-  opacity: .4;
-  color:#5b1b14;
-  border: 1px solid white;
+  box-shadow: 3px 3px;
 }
 
   a {
