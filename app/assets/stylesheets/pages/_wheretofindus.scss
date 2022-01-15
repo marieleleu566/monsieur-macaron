@@ -79,11 +79,11 @@ top: 10%;
 }
 }
 
+
 .contact-left {
-  background-image: url('assets/images/croissanthome.png');
   @include from-medium-low {
   position: relative;
-  background-image: url('assets/images/croissanthome.png');
+  background-image: url(<%= image_tag 'croissanthome.png' %>)
   background-size: cover;
   }
 }
