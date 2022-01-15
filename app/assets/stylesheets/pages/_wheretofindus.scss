@@ -83,7 +83,7 @@ top: 10%;
 .contact-left {
   @include from-medium-low {
   position: relative;
-  background-image: url(<%= image_tag 'croissanthome.png' %>)
+  background-image: image-url('croissanthome.png')
   background-size: cover;
   }
 }
