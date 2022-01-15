@@ -1,115 +1,70 @@
-<div class="content">
-  <div class="parallax">
-    <div class="display-text">
-    <div class="title">
-      <div class="mr-title">
-        <h1>Monsieur Macaron<br></h1>
-      </div>
-    </div>
-    </div>
-      <div class="moving-text">
-        <span id="banner-typed-text"></span>
-      </div>
-  </div>
-  <div class="Content" data-type="content">
-    <div class="about-text">
-      <h1>Monsieur Macaron perpetuates taste, elegance, flavor, flair and tradition</h1>
-      <p>Our <i>raison d'être</i> is to give you a moment to appreciate how Glamorous<br> Macarons & French Baking are.</p>
-    </div>
-    <div class="about-photos">
-      <div class="home-macaron">
-        <%= image_tag 'homepagemacaron.jpg', style:"max-height: 300px", class:"media" %>
-        <h2><a href="/pages/macaron">Macacron</a></h2>
-      </div>
-      <div class="home-croiss">
-        <%= image_tag 'croissanthome.jpg', style:"max-height: 300px", class:"media" %>
-        <h2><a href="/pages/homedelivery">French Baking</a></h2>
-      </div>
-      <div class="home-pastery">
-        <%= image_tag 'homepage-products-french-patisserie.jpg', style:"max-height: 300px", class:"media" %>
-         <h2><a href="/pages/homedelivery">French Gateau</a></h2>
+<div class="home">
+  <div class="parallax-window">
+    <%= image_tag 'home1.jpg' %>
+    <div class="text">
+      <p>Monsieur Macaron</p>
+      <h3>perpetuates taste, elegance,<br> flair & tradition</h3>
+      <div class="button">
+        <a href="/pages/about">See More</a>
       </div>
     </div>
   </div>
-  <div class="parallax-2"></div>
-  <div class="about-text">
-    <h1>Where to Find Us</h1>
-    <p>You can order fresh baking home delivered on Saturday mornings, visit us at the Sunday Farmer's Market,<br>or order in advance for your next event.</p>
-  </div>
-  <div class="about-photos-2">
-    <div class="home-macaron">
-      <%= image_tag 'kitchen.jpg', style:"max-height: 300px" %>
-      <h2><a href="https://www.google.com/maps/place/Monsieur+Macaron+Limited/@-39.505615,176.8780076,17z/data=!3m1!4b1!4m5!3m4!1s0x6d69b3152259d159:0x6bf068ffc85ee9fd!8m2!3d-39.5056192!4d176.8801963">Monsieur Macaron Kitchen</a></h2>
+  <div class="container-macaron">
+  <div class="photo-left">
+    <div class="photo">
+      <%= image_tag 'hand.png', height: '700px'%>
     </div>
-    <div class="home-croiss">
-      <%= image_tag 'farmers.jpg', style:"max-height: 300px"  %>
-      <h2><a href="https://www.google.com/maps/place/Hawkes+Bay+Farmers+Market/@-39.6297361,176.8603707,17z/data=!3m1!4b1!4m5!3m4!1s0x6d69ca8aa8c99b75:0xb1eeda9191183655!8m2!3d-39.6297403!4d176.8625594">Hawke's Bay Farmers Market</a></h2>
-    </div>
-    <div class="home-pastery">
-      <%= image_tag 'corporate-function.jpg', style:"max-height: 300px"  %>
-       <h2><a href="/contact/new">Corporate<br>Events</a></h2>
-    </div>
-    <div class="home-pastery">
-      <%= image_tag 'macaron-wedding.jpg', style:"max-height: 300px"  %>
-       <h2><a href="/contact/new">Wedding Functions</a></h2>
+    <div class="text-box">
+      <div id='boxinside-del'>
+        <div class="text-home boxtext-delivery" style='background-color: white;'>
+          <p style='color:black;'>Home Delivery</p>
+          <h3>freshly baked Pastries delivered<br> straight to your door</h3>
+          <div class="button">
+            <a href="/pages/homedelivery">Join Now</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h1>sick of baking?</h1>
-    <h3><i>Join the Family Club</i></h3>
-    <h4>TEXT "STAY HOME"<br><p class="text-info-modal">WITH YOUR NAME, PHONE NUMBER<br> & ADDRESS TO 021-0822-0001</p></h4>
-    <div class="button-text">
-      <a href="sms://+64 021-08-22-0001" class="text"><i class="fas fa-mobile-alt"></i> SEND TEXT NOW</a>
+<div class="container-macaron">
+  <div class="photo-right">
+    <div class="text-box">
+      <div id='boxinside-find' style='padding: 0px;'>
+        <div class="text-home boxtext-delivery " style='background-color: white;'>
+          <p style='color:black;'>Macarons</p>
+          <h3>deliciously made with<br>french savoir faire</h3>
+          <div class="button">
+            <a href="/macarons">See More</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <p>Get 2 Free MACARONS for your First Order if you spend $20 with <b>CODE 'FIRST IN'</b><br>*Conditions apply</p>
+    <div class="photo">
+      <%= image_tag 'home3.jpeg', height: '700px'%>
+    </div>
   </div>
 </div>
+<!--   <div class="parallax-window">
+    <%= image_tag 'del4.jpg' %>
+    <div class="text">
+      <p>Home Delivery</p>
+      <h3>freshly baked Pastries delivered<br> straight to your door</h3>
+      <div class="button">
+        <a href="/pages/homedelivery">Join Now</a>
+      </div>
+    </div>
+  </div>
+  <div class="parallax-window">
+    <%= image_tag 'home3.jpg' %>
+    <div class="text">
+      <p>Macarons</p>
+      <h3>deliciously made with<br>french savoir faire</h3>
+      <div class="button">
+        <a href="/macarons">See More</a>
+      </div>
+    </div>
+  </div>
+</div> -->
 
-<script>
-    // Get the modal
-  var modal = document.getElementById("myModal");
 
-  // Get the button that opens the modal
-  window.onload = function() {
-      setTimeout(function() {
-          document.getElementById('myModal').style.display = 'block';
-      }, 1500);
-  }
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-    }
-  }
-
-var hasVisited = sessionStorage.getItem("hasVisited");
-
-// If falsy, user didn't visited your page yet.
-if (!hasVisited) {
-    sessionStorage.setItem("hasVisited", true);
-      window.onload = function() {
-      setTimeout(function() {
-          document.getElementById('myModal').style.display = 'block';
-      }, 1500);
-  } // Shows popup only once
-}
-
-    ScrollReveal().reveal('.headline');
-    ScrollReveal().reveal('.home-macaron', { delay: 300, distance: '250px', easing: 'ease-in'})
-    ScrollReveal().reveal('.home-croiss', { delay: 500, distance: '250px', easing: 'ease-in' })
-    ScrollReveal().reveal('.home-pastery', { delay: 700, distance: '250px', easing: 'ease-in' })
-</script>

@@ -1,184 +1,119 @@
-.parallax-home-delivery {
-  /* The image used */
-  background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/homedelivery1.jpg");
-  /* Set a specific height */
-  min-height: 720px;
-  width:100%;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+#boxinside-del {
+  position: inherit;
+  background-color: white;
+  width: 100%;
+p {
+  margin-bottom: 0px;
 }
-
-.home-title-word {
-    font-size: 135px;
-    color: oldlace;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 700px;
-    font-family: 'Ball';
-}
-
-.home-title-sentence {
-  margin-top: 60px;
+@include from-medium {
   position: absolute;
-  font-size:30px;
-  color: oldlace;
-  top: 65%;
-  left: 50%;
-  text-shadow: 1px 1px black;
-  transform: translate(-50%, -50%);
+  background-color: white;
+  right: 2%;
+  top: 30%;
+  width: 50%;
+}
 }
 
-
-.home-delivery-info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap:50px;
-  margin-bottom: 100px;
-}
-
-.home-delivery-text {
-  margin-top: 80px;
-  h2 {
-    text-align: center;
-  }
-  h4 {
-    color:#5b1b14;
-    text-align:center;
-  }
-  p {
-    text-align:center;
-  }
-}
-
-.number {
-  color:#5b1b14;
-}
-
-.homedelphoto {
-  position: relative;
-  width: 400px;
-  height: 100%;
-}
-
-.home-delivery-price-box {
+.boxtext-delivery {
+  padding: 30px;
   h3 {
-    text-shadow: 1px 1px black;
-    letter-spacing: 2px;
-    font-family: 'Lato';
-    font-size: 30px;
-
+    color: #5B1B14;
+    letter-spacing: 0.05em;
   }
+  h5 {
+    letter-spacing: 0.05em;
+    font-weight: 300;
+  }
+}
+
+.photo {
+  img {
+  width: 100%;
+  object-fit: cover;
+  }
+}
+
+.pay {
   text-align: center;
-  color:white;
-  background: linear-gradient(1deg, #820204 0%, #5b1b14 100%);  border: 2px solid #820204;
-  border-radius: 5px 5px 5px 5px;
-  padding: 50px 20px;
-  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+  margin-top: 100px;
+    h1 {
+    text-transform: uppercase;
+    color: #5B1B14;
+    letter-spacing: 0.05em;
+  }
+  h3 {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+  }
 }
 
-
-.free-delivery {
- letter-spacing: 1px;
- margin-bottom: 35px;
+.biege {
+  background-color: #F8F5F0;
+  margin-top: 0px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.home-delivery-price {
+.home-del-info {
+  text-align: center;
+  width: 85%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info {
+  flex-wrap: wrap;
+  bottom: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 30px;
+      img {
+        width: auto;
+  }
+  @include from-medium {
+    flex-direction: row;
+  }
+}
+
+.info-specific {
+    margin-bottom: 50px;
+    text-align: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-top: 90px;
-}
-
-.home-delivery-photos {
-  display:flex;
-  justify-content:center;
-  img{
-    margin-left: 5px;
-  }
-}
-
-.signup-info {
-  margin-top:15px;
-  font-size: 12px;
-  font-style: italic;
-}
-
-.signup {
-  box-shadow: 2px 2px;
-  left: 30%;
-  bottom: 100px;
-  background-color:#F0E6D3;
-  border:1px solid #5b1b14;
-  color:#5b1b14;
-  padding: 10px;
-  font-family: 'Lato', sans-serif;
-  margin: 25px 0;
-  letter-spacing: 1px;
-  position: absolute;
-}
-
-.signup:hover{
-  box-shadow: 3px 3px;
-}
-
-  a {
-    text-decoration: none;
-  }
-  a:hover{
-    color:#5b1b14;
-    text-decoration: none;
-  }
-
-  .fas {
-    margin-right: 3px;
-  }
-
-@media (max-width: 720px) {
-  .parallax-home-delivery {
-      background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/homedelivery1media.jpg");
-      min-height: 414px;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      max-width: 100%;
-      background-position: inherit;
-      background-size: inherit;
+    width: 200px;
+    p:first-of-type {
+      font-size: 20px;
+      color: #5B1B14;
+      font-weight: 300;
     }
-  .home-delivery-info {
-    grid-template-columns: 1fr;
-  }
+    @include from-medium-high {
+      margin-bottom: 10px;
+    }
+}
 
-  .home-title-word {
-    font-size: 55px !important;
-    color: oldlace;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 250px;
-    font-family: 'Ball';
+.button-special {
+  margin: 50px;
+  padding: 10px 20px;
+  background-color: white;
+  border: 1px solid #5B1B14;
+  a {
+    color: #5B1B14;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
   }
-
-  .home-title-sentence {
-    display:none;
+  &:hover {
+    a {
+      color: white;
+    }
+    background-color:#5B1B14;
   }
-
-  .home-delivery-price {
-    margin-top: 0;
-  }
-
-  .home-delivery-banner {
-    height:370px;
-  }
-  .home-delivery-text {
-    margin-top: 0;
-  }
-  }
-
-  @media (max-width: 1024px) {
-    .home-title-word {
-      font-size: 120px;
-  }
-  }
+}

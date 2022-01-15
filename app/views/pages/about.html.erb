@@ -1,60 +1,54 @@
-<div class="content">
-  <div class="container">
-    <div class="about-name">
-        <h1>About Monsieur Macaron</h1>
+<div class="home">
+  <div class="parallax-window">
+    <%= image_tag 'mm1.png' %>
+    <div class="text">
+      <p>ABOUT US</p>
+      <h3>Good quality baking<br> for a reasonable price</h3>
     </div>
-    <div class="about-1">
-      <div class="about-image-1">
-        <%= image_tag 'Ben_rugby_shirt_macaron_paris.jpg', style:"max-height:350px" %>
-      </div>
-      <div class="about-text-1-align">
-        <div class="about-text-1">
-          <h5>Benjamin Pallais</h5>
-          <h6>Founder of Monsieur Macaron</h6>
-          <p><b>Who are you?</b><br>
-          Bonjour, I am Benjamin. Creator of Monsieur Macaron, foodie, and ex rugby player.</p>
-          <p><b>Why did you chose New Zealand?</b><br>
-          Probably, for the love of rugby and the attractions around the myth of the All Blacks. I first visited New Zealand in 2007, when I was 21 years old. Since that trip, I have been motivated to become a Kiwi.</p>
-        </div>
-      </div>
+  </div>
+</div>
+<div class="container-macaron">
+  <div class="photo-left">
+    <div class="photo-ben">
+      <%= image_tag 'ben.jpg', height: '550px'%>
     </div>
-    <div class="about-2">
-      <div class="about-text-2-align">
-        <div class="about-text-2">
-          <p><b>Why did you become a Pastry chef?</b><br>
-          Probably the best job to express myself creatively with my patisserie, to allow me to travel around the world, and to provide happiness to my customers.</p>
-          <p><b>Why have you created Monsieur Macaron Ltd? Why did you choose macarons?</b><br>
-          In my opinion, Macarons are the most glamorous biscuit in the world. As a Parisien, the macaron is the most trendy patisserie and is well known to Kiwi people. The creation of the company gave me the opportunity to fully express myself, manage my own relationships with customers/partners, and have the honour of helping the NZ Food culture.</p>
-          <p><b>What's the best part of your job?</b><br>
-          Having the pleasure to sell and meet my customers at the Farmers Market in Hastings every Sunday.</p>
-        </div>
+    <div class="text-box">
+      <div class="header-text">
+        <h1>Benjamin Pallais</h1>
+        <h2 style='color:#5B1B14;'>Founder of Monsieur Macaron</h2>
       </div>
-      <div class="about-image-2">
-        <%= image_tag 'Ben_Pallais-Chef-900.jpg', style:"max-height:400px" %>
-      </div>
-    </div>
-     <div class="about-3">
-      <div class="about-image-3">
-        <%= image_tag 'Ben_in_France.jpg', style:"max-height:400px" %>
-      </div>
-      <div class="about-text-3-align">
-        <div class="about-text-3">
-        <p><b>What's your favorite patisserie?</b><br>
-        Royal Chocolat Gateau. Made with Almond biscuit base, Praliné Hazelnut Paste, and Chocolate Bavaroise Mousse. It's been my Birthday Cake since I was 10.</p>
-        <p><b>What are your hobbies?</b><br>
-        Food - Rugby - Fishing</p>
-        <p><b>What's your favorite rugby club and rugby player?</b><br>
-        Best rugbyman ever is Jonah LOMU. I was totally fascinated when I was a kid. Then Christian Califano, the first french prop to play for the Blues. My best teams, I'll say Stade Toulousain, All Blacks and France.</p>
-        <p><b>What can we wish you for the future??</b><br>
-        Keep delivering good quality baking for a reasonable price. For the long term, become the best creator of Macaron in New Zealand 😉</p>
+      <div id='boxinside'>
+        <div class='boxtext'>
+          <p class='question'><b>Who are you?</b></p>
+          <p>Bonjour, I am Benjamin. Creator of Monsieur Macaron, foodie, and ex rugby player.</p>
+          <br>
+          <p class='question'><b>Why did you chose New Zealand?</b></p>
+          <p>Probably, for the love of rugby and the attractions around the myth of the All Blacks. I first visited New Zealand in 2007, when I was 21 years old. Since that trip, I have been motivated to become a Kiwi.</p>
+          <br>
+          <p class='question'><b>Why did you become a Pastry chef?</b></p>
+          <p>Probably the best job to express myself creatively with my patisserie, to allow me to travel around the world, and to provide happiness to my customers.</p>
+          <br>
+          <p class='question'><b>Why have you created Monsieur Macaron Ltd? Why did you choose macarons?</b></p>
+          <p>In my opinion, Macarons are the most glamorous biscuit in the world. As a Parisien, the macaron is the most trendy patisserie and is well known to Kiwi people. The creation of the company gave me the opportunity to fully express myself, manage my own relationships with customers/partners, and have the honour of helping the NZ Food culture.</p>
+          <br>
+          <p class='question'><b>What's the best part of your job?</b></p>
+          <p>Having the pleasure to sell my pasteries and meet my customers at the Farmers Market in Hastings every Sunday.</p>
         </div>
       </div>
     </div>
   </div>
 </div>
-
 <script>
-  ScrollReveal().reveal('.about-image-1', { delay: 500, distance: '200px', origin: 'left', easing: 'ease-in'})
-  ScrollReveal().reveal('.about-image-2', { delay: 500, distance: '200px', origin: 'right', easing: 'ease-in'})
-  ScrollReveal().reveal('.about-image-3', { delay: 500, distance: '200px', origin: 'left', easing: 'ease-in'})
+
+function resize () {
+  parentHeight = document.getElementById('boxinside').offsetHeight;
+    if (parentHeight > 500){
+      console.log(parentHeight)
+      document.querySelector('#boxinside').style.position = "inherit";
+    } else {
+      document.querySelector('#boxinside').style.position = "absolute";
+    }
+}
+
+window.onresize = resize;
 </script>

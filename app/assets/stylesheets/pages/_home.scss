@@ -1,320 +1,104 @@
-// Specific CSS for your home-page
-@font-face {
-  font-family: "Ball";
-  src: font-url('Ball.ttf') format('truetype')
-}
-
 body {
-  background-color:white;
-}
-
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-
-
-.footer {
-  flex-shrink: 0;
-}
-
-.title {
-  h1 {
-  font-family:"Ball";
-  font-size:140px;
+  h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Lato';
   }
-  color: oldlace;
-}
-
-.display-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 700px;
+  p {
+    font-weight: 300;
+  }
+  background-color: white;
   position: relative;
 }
 
-.typed-cursor {
-  display:none;
-}
 
-.moving-text {
-  position: absolute;
-  top: 70%;
-  left: 32%;
-  font-family: $headers-font;
-  font-size: 30px;
-  color: oldlace;
-}
-
-.about-text {
-  text-align: center;
-  margin-top: 60px;
-  p {
-    font-size: 20px;
-  }
-}
-
-.about-photos {
-  margin-bottom: 100px;
-  margin-top: 30px;
-  text-align: center;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+.parallax-window {
+  min-height: 300px;
+  background: transparent;
+  position: relative;
+  object-fit: 50% 50%;
   img {
-    padding:20px;
-  }
-  h2 {
-    font-family: Lato, sans-serif;
-    font-weight: 300;
-    font-size:25px;
+    width: 100%;
+    object-fit: cover;
+    height: 700px;
   }
 }
 
-.home-pastery, .home-macaron, .home-croiss {
-    a {
-    color: #5b1b14;
-  }
-  a:hover {
-    color: grey;
-  }
-}
-
-.about-photos-2 {
-  margin-bottom: 100px;
-  margin-top: 30px;
-  text-align: center;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  img {
-    padding:20px;
-  }
-  h2 {
-    font-family: Lato, sans-serif;
-    font-weight: 300;
-    font-size:25px;
-  }
-}
-
-.parallax {
-  /* The image used */
-  background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaroncloseoverlay.jpg");
-  /* Set a specific height */
-  min-height: 720px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width:100%;
-}
-
-.parallax-2 {
-  /* The image used */
-  background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronplate.jpg");
-  /* Set a specific height */
-  min-height: 500px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width:100%;
-}
-
-.Content {
-  max-width: 850px;
-  margin: 0 auto;
-  padding: 15px 0;
-}
-
-.Content-2 {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 15px 0;
-}
-
-// Modal //
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 5; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/croissants.jpg");
-  background-size:cover;/* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-  opacity:0.9;
-  background-color: #5B1B14;
-  color:white;
-  margin: 7% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid white;
-  max-width: 500px; /* Could be more or less, depending on screen size */
-  h1 {
-    font-family:'ball';
-    font-size: 60px;
-  }
-  h1, h4, h5, p, a, h3 {
-    text-align:center;
-    margin-bottom: 20px;
-  }
-
-  h5 {
-    font-family: 'Lato';
-    letter-spacing: 1px;
-  }
-}
-
-.text-info-modal {
-  font-size:15px;
-  color: white;
-}
-/* The Close Button */
-.close {
-  color: white;
-  float:right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.button-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .text {
-  border-radius: 5px 5px 5px 5px;
+  color: white;
+  text-transform: uppercase;
+  p {
+    font-size: 25px;
+    font-weight: 200;
+  }
+  h3 {
+    font-family:'Lato';
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 30px;
+    @include from-medium {
+      font-size: 40px;
+    }
+  }
+    font-family: 'Lato';
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    padding: 10px;
+    display: flex;
+    margin-left: 0px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    @include from-medium-low {
+      padding: 10px 50px;
+    }
+}
+
+.text-home {
+  color: white;
+  text-transform: uppercase;
+  p {
+    font-size: 25px;
+    font-weight: 200;
+  }
+  h3 {
+    font-family:'Lato';
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 20px;
+    @include from-medium {
+      font-size: 25px;
+    }
+  }
+    font-family: 'Lato';
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    padding: 10px;
+    display: flex;
+    margin-left: 0px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    @include from-medium-low {
+      padding: 10px 50px;
+    }
+}
+
+.button {
+  margin-top: 50px;
+  padding: 10px 20px;
   background-color: white;
-  border: 1px solid #5b1b14;
-  color: #5b1b14;
-  padding: 18px;
-  font-family: 'Lato', sans-serif;
-  font-size: 20px;
-  letter-spacing: 1px;
-  width: 300px;
-}
-
-.text:hover{
-  background-color:white;
-  opacity: .4;
-  color:#5b1b14;
-  border: 1px solid white;
-}
-
+  border: 1px solid #5B1B14;
   a {
+    color: #5B1B14;
+    letter-spacing: 1px;
     text-decoration: none;
   }
-  a:hover{
-    color:#5b1b14;
-    text-decoration: none;
+  &:hover {
+    a {
+      color: white;
+    }
+    background-color:#5B1B14;
   }
-
-  .fas {
-    margin-right: 3px;
-  }
-
-// Medium devices (tablets, 768px and up)
-  @media (max-width: 720px) {
-    .parallax {
-      background-image: url('https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclosemedia.jpg');
-      min-height: 414px;
-      background-attachment: fixed;
-      background-repeat: no-repeat;
-      max-width: 100%;
-      background-position: inherit;
-      background-size: inherit;
-    }
-
-    .parallax-2 {
-    /* The image used */
-    background-image: url("https://monsieur-macaron.s3.eu-west-3.amazonaws.com/macaronclosemedia.jpg");
-    /* Set a specific height */
-    min-height: 500px;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: inherit;
-    max-width:100%;
-  }
-
-    .media {
-      display:initial;
-
-    }
-    .moving-text {
-      display:none;
-    }
-
-    .display-text {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 300px;
-      position: relative;
-    }
-
-    .mr-title {
-      h1 {
-        font-size: 50px !important;
-      }
-    }
-    .about-text {
-      margin: 0;
-    }
-
-    .about-photos {
-      grid-gap: 0px;
-      grid-template-columns: 1fr !important;
-    }
-
-     .about-photos-2 {
-      grid-gap: 0px;
-      grid-template-columns: 1fr !important;
-    }
-  }
-
- @media (max-width: 1024px) {
-      .about-photos {
-      grid-template-columns: 1fr 1fr 1fr ;
-    }
-
-    .media {
-      max-height: 200px !important;
-    }
-
-     .about-photos-2 {
-      grid-template-columns: 1fr 1fr;
-    }
-
-    .mr-title {
-      h1 {
-      font-size: 100px;
-      }
-    }
-
-    .moving-text {
-      left: 18%;
-    }
- }
+}

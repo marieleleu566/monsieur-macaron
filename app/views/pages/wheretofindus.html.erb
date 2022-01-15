@@ -1,91 +1,46 @@
-<div class="content">
-  <div class="parallax-test">
-    <div class="parallax__layer parallax__layer--back">
-      <div class="parallax-map">
-        <div id='map' style='width: 100%; height: 400px;'></div>
+<div class="home">
+  <div class="parallax-window">
+    <%= image_tag 'homedelivery1.jpg' %>
+    <div class="text">
+      <p>Home Delivery</p>
+      <h3>COME FIND US TO ENJOY OUR<br>QUALITY BAKED GOODS</h3>
+      <div class="button">
+        <a href="/contact/new">Join Now</a>
       </div>
     </div>
-    <div class="parallax__layer parallax__layer--base">
-      <div class="container">
-        <div class="where-to-find-us-locations">
-          <div class="find-us-grid">
-            <div class="find-kitchen">
-              <h2><a href="https://www.google.com/maps/place/Monsieur+Macaron+Limited/@-39.505615,176.8780076,17z/data=!3m1!4b1!4m5!3m4!1s0x6d69b3152259d159:0x6bf068ffc85ee9fd!8m2!3d-39.5056192!4d176.8801963">My <br>Kitchen</a></h2>
-              <%= image_tag 'kitchen.jpg', style:"max-height:200px" %>
-              <p>Don't hesitate to order your macarons and to come to pick them up on a week day at the kitchen located in Onekawa - Napier. Macarons are made fresh every day and you wont find a better quality/price in Hawkes Bay.<br><br> Alternatively, if you are located in Hawke's Bay you can get macarons and other baked goods delivered directly to your home.<br><br> For more information check out <%= link_to "home delivery.", pages_homedelivery_path %></p>
-            </div>
-            <div class="find-farmers">
-              <h2><a href="https://www.google.com/maps/place/Hawkes+Bay+Farmers+Market/@-39.6297361,176.8603707,17z/data=!3m1!4b1!4m5!3m4!1s0x6d69ca8aa8c99b75:0xb1eeda9191183655!8m2!3d-39.6297403!4d176.8625594">Hawke's Bay Farmers Market</a></h2>
-              <%= image_tag 'farmers.jpg', style:"max-height:200px" %>
-              <p>Since 2015, we are the official member and proud representatives of Macarons and French Croissants made here in Hawkes Bay!<br><br>
-              The Hawke's Bay Farmer's Market is one of the highlights of our week and we look forward to having you come visit us this Sunday.<br><br>
-              Stop by our booth to try any of our Macarons or our French Pasteries.</p>
-            </div>
-            <div class="find-corporate">
-              <h2>Corporate Events</h2>
-              <%= image_tag 'corporate-function.jpg', style:"max-height:200px" %>
-              <p>Handmade our very own french way, our macarons make delightful treats for festive parties or business function. Made with gluten-free ingredients, these sweets treats are perfect for tasting and sharing with your collaborators.<br><br>
-              Our macarons make delightful desserts for festive parties or as a gift to any event.<br><br>
-              <%= link_to "Contact us for more details.",  new_contact_path %></p>
-            </div>
-            <div class="find-wedding">
-              <h2>Wedding Functions</h2>
-              <%= image_tag 'macaron-wedding.jpg', style:"max-height:200px" %>
-              <p> An essential and glamourous part of your wedding, macarons are the perfect delicacy to bring an elegant, timeless touch to your special event. Each macaron will be made by hand to utter perfection to wow all your guests. <br><br>Imagine favor boxes or a macaron tower as a unique addition to your next celebration.<br><br>
-              <%= link_to "Contact us for more details.",  new_contact_path %></p>
-            </div>
-          </div>
+  </div>
+</div>
+<div class="container-macaron">
+  <div class="photo-right">
+    <div class="text-box">
+      <div id='boxinside-find'>
+        <div class='boxtext-delivery'>
+          <h3>OUR KITCHEN</h3><br>
+          <p>Don't hesitate to order your macarons and to come to pick them up on a week day at the kitchen located in Onekawa - Napier.<br><br>Macarons are made fresh every day and you wont find a better quality/price in Hawkes Bay.</p>
+          <br>
+          <a href="https://goo.gl/maps/GvkNzDXjqKKpveqA7">13 Thorn Place, Onekawa, Napier 4110, New Zealand</a>
+        </div>
+      </div>
+    </div>
+    <div class="photo">
+      <%= image_tag 'macaronplate.jpeg', height: '700px'%>
+    </div>
+  </div>
+</div>
+<div class="container-macaron">
+  <div class="photo-left">
+    <div class="photo">
+      <%= image_tag 'farmers.jpg', width: '1000px'%>
+    </div>
+    <div class="text-box">
+      <div id='boxinside-del'>
+        <div class='boxtext-delivery'>
+          <h3><a href="https://hawkesbayfarmersmarket.co.nz/">HAWKES BAY SUNDAY<br>FARMERS MARKET</a></h3><br>
+          <p>Since 2015, we are official members and proud representatives of Macarons and French Croissants made here in Hawkes Bay! <br><br>Stop by our booth to try any of our Macarons or our French Pasteries.</p>
+          <br><br>
+          <a href="https://goo.gl/maps/GvkNzDXjqKKpveqA7">Kenilworth Road, Mayfair, Hastings 4122, New Zealand</a>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-<script>
-
-// map //
-mapboxgl.accessToken = 'pk.eyJ1IjoibWFyaWVsZWxldTU2NiIsImEiOiJja2g0b3AyeXMwMGFrMnFvYmM1Nnkzc2hvIn0.V1hUYYpJ4_dh28KCVb2wCw';
-var map = new mapboxgl.Map({
-container: 'map',
-style: 'mapbox://styles/marieleleu566/ckkwmsayr529018qy73e3yehe', // stylesheet location
-center: [176.851679, -39.548652], // starting position [lng, lat]
-zoom: 10 // starting zoom
-});
-
-map.on('click', function(e) {
-  var features = map.queryRenderedFeatures(e.point, {
-    layers: ['macaron'] // replace this with the name of the layer
-  });
-
-  if (!features.length) {
-    return;
-  }
-
-  var feature = features[0];
-
-  var popup = new mapboxgl.Popup({ offset: [0, -15] })
-    .setLngLat(feature.geometry.coordinates)
-    .setHTML('<h4>' + feature.properties.title + '</h4><p>' + feature.properties.description + '</p>')
-    .addTo(map);
-});
-
-// Initialize the geolocate control.
-var geolocate = new mapboxgl.GeolocateControl({
-positionOptions: {
-enableHighAccuracy: true
-},
-trackUserLocation: true
-});
-// Add the control to the map.
-map.addControl(geolocate);
-// Set an event listener that fires
-// when a geolocate event occurs.
-geolocate.on('geolocate', function() {
-console.log('A geolocate event has occurred.')
-});
-
-var nav = new mapboxgl.NavigationControl();
-map.addControl(nav, 'top-left');
-
-
-</script>

@@ -1,35 +1,86 @@
-<div class="parallax-home-delivery">
-  <div class="home-deliv-banner">
-    <h1 class="home-title-word">Home Delivery</h1>
-  </div>
-  <p class="home-title-sentence">In Hawke's Bay</p>
-  </div>
-</div>
-<div class="container">
-  <div class="home-delivery-info">
-    <div class="home-delivery-text">
-      <h2>Freshly Baked French Pastries Delivered To Your Door</h2><br>
-      <h4><i>An Obsession with Freshness</i></h4><br>
-      <p>We've been obsessed with Croissants and French Baking since we opened our commercial kitchen in Napier in 2015. Our team is composed of friendly young professionals, using NZ ingredients and great quality butter with the French know-how. Our baking is one of the references of artisan French Baking in New Zealand.
-      <p>Every Saturday we deliver to all Hawke's Bay suburbs between Bay View and Hastings, directly to your door.</p>
-      <p>We invite you to text us at <a href="tel:021-08-22-0001" class='number'>021-08-22-001</a> with your <i><u>NAME & ADDRESS.</u></i> You'll join our limited "family club". Every Thursday night at 6pm, when we deliver to your suburb, you'll receive a link to the booking online with the list of macarons and bakied items available for the following Saturday.</p>
-      <p>Our home delivery service is our "MERCI" to be part of the Hawke's Bay Community. Free delivery, cheaper than town, obsessed by the perfect baking and the freshness. First in, First Served. Limited to the first 50 hours. Give it a try - you'll amazingly be well suprised by our service and our baking.</p>
-    </div>
-    <div class="home-delivery-price">
-      <%= image_tag 'home.png', style:'width:400px;', class:'homedelphoto' %>
-      <a href="sms://+64 021-08-22-0001" class="signup"><i class="fas fa-mobile-alt"></i> SIGN UP FOR DELIVERY</a>
-<!--       <div class="home-delivery-price-box">
-        <h3><b>PRICES</b></h3>
-        <p><b>Croissants</b><br>$3.50 each, 3 for $10.</p>
-        <p><b>Pain au chocolat, Pain aux raisin, Brioche chocolat,<br> Almond croissant, Danish fruit</b><br>$4.50 each, 3 for $12</p>
-        <p>Plus any creation of the week...</p>
-        <p class="free-delivery">✨ FREE DELIVERY FOR ALL ORDERS ✨</p>
-        <p class="signup-info">Text 021-08-22-0001 with your name and address.</p>
-      </div> -->
+<div class="home">
+  <div class="parallax-window">
+    <%= image_tag 'del1.jpg' %>
+    <div class="text">
+      <p>Home Delivery</p>
+      <h3>Every Saturday we deliver across<br> Hawkes Bay</h3>
+      <div class="button">
+        <a href="/contact/new">Join Now</a>
+      </div>
     </div>
   </div>
 </div>
-<script>
-  ScrollReveal().reveal('.home-delivery-price', { delay: 500, distance: '200px', origin: 'right', easing: 'ease-in'})
-  ScrollReveal().reveal('.home-delivery-info', { delay: 500, distance: '200px', origin: 'left', easing: 'ease-in'})
-</script>
+<div class="container-macaron">
+  <div class="photo-left">
+    <div class="photo">
+      <%= image_tag 'hand.png', height: '700px'%>
+    </div>
+    <div class="text-box">
+      <div id='boxinside-del'>
+        <div class='boxtext-delivery'>
+          <h3>AN OBESSION WITH FRESHNESS</h3><br>
+          <p><b>Every Saturday we deliver</b> to all Hawke's Bay suburbs between Bay View and Hastings,<br> directly <b>to your door.</b><br><br>
+          Our home delivery service is our "MERCI" to be part of the Hawke's Bay Community. Free delivery, cheaper than town, obsessed by the perfect baking and the freshness. First in, First Served. Limited to the first 50 hours. Give it a try - you'll amazingly be well suprised by our service and our baking.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="pay">
+  <h1>Home Delivery</h1>
+  <h3>✨ Saturday in Hawkes Bay ✨</h3>
+  <div class="biege">
+    <div class="home-del-info">
+      <div class="info">
+        <div class="info-specific">
+          <%= image_tag 'one.png', height:'35px' %>
+          <%= image_tag 'text.png', height:'100px' %>
+          <p>Text Me</p>
+          <p>Name & Address<br>02108220001</p>
+        </div>
+        <div class="info-specific">
+          <%= image_tag 'two.png', height:'35px' %>
+          <%= image_tag 'email.png', height:'100px' %>
+          <p>Receive</p>
+          <p>Booking Link<br><b>Thursday 6PM</b></p>
+        </div>
+        <div class="info-specific">
+          <%= image_tag 'three.png', height:'35px' %>
+          <%= image_tag 'submit.png', height:'100px' %>
+          <p>Click & Order</p>
+          <p>Your Favorite<br>French Baking</p>
+        </div>
+        <div class="info-specific">
+          <%= image_tag 'four.png', height:'35px' %>
+          <%= image_tag 'safe.png', height:'100px' %>
+          <p>Contactless Payment</p>
+          <p>Bank Account<br>Transfer</p>
+        </div>
+        <div class="info-specific">
+          <%= image_tag 'five.png', height:'35px' %>
+          <%= image_tag 'truck.png', height:'100px' %>
+          <p>Contactless Delivery</p>
+          <p><b>Saturday<br>6-8:30am</b></p>
+        </div>
+      </div>
+    </div>
+    <div class="button-special">
+      <a href="/contact/new">Sign Up For Delivery</a>
+    </div>
+  </div>
+</div>
+<!-- <script>
+
+function resizehome () {
+  parentHeightHome = document.getElementById('boxinside-del').offsetHeight;
+    if (parentHeightHome > 200){
+      console.log(parentHeight)
+      document.querySelector('#boxinside-del').style.position = "inherit";
+    } else {
+      document.querySelector('#boxinside-del').style.position = "absolute";
+    }
+}
+
+window.onresize = resizehome;
+</script> -->

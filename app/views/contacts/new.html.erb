@@ -1,56 +1,57 @@
-<div class="content">
-  <div class="container">
-    <h1 class="contact-title">Contact & Orders</h1>
-    <div class="contact-grid">
-      <div class="contact-info">
-        <div class="contact-image">
-          <%= image_tag 'macaron-contact.jpg' %>
-        </div>
-        <p> We now deliver Macarons across the Nth. Island!<br>For Macaron shipping & prices please see details <%= link_to "here.", pages_homedelivery_path %><br><br>
-        For Saturday Morning Home Delivery<br> please see details <%= link_to "here.", pages_macaron_path %><br><br>
-        For all general enquiries and Maracon orders, or enquiries about Corporate Functions & Wedding Catering please fill out the form.</p>
-      </div>
-      <div class="contact-form">
-        <%= simple_form_for @contact do |f| %>
-          <% if flash[:error].present? %>
-            <p> Please correctly complete the fields below</p>
-          <% end %>
-          <div class="form-row">
-            <div class="col">
-              <%= f.input :firstname, label:"First Name", error: 'First name is mandatory, please specify one', required: true, class:"form-control"%> <br>
-            </div>
-            <div class="col">
-              <%= f.input :lastname, label:"Last Name", error: 'Last name is mandatory, please specify one', class:"form-control"%> <br>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="col">
-              <%= f.input :phone, label:"Phone Number", error: 'Please enter your phone number', class:"form-control"%> <br>
-            </div>
-            <div class="col">
-              <%= f.input :email, label:'Your Email', required: true, class:"form-control"%> <br>
-              <%= f.input :email2, label:'Your Email', required: false, class:'bot-email'%>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="col">
-              <%= f.input :type, collection:["General Questions & Messages", "Macaron Orders Events", "Weddings & Functions"], label:'How can we help?', error: 'Please select an option from the list', required: true%> <br>
-            </div>
-          </div>
-          <div class="form-text">
-            <%= f.label 'Orders & Questions', required: true %>
-            <%= f.text_area(:message, rows: 3, class:"form-control")%> <br>
-          </div>
-          <%= recaptcha_tags %>
-          <div class="send-button">
-            <%= f.submit 'SEND', class: "send-btn" %>
-          </div>
+<div class="contact">
+  <div class="contact-left">
+    <div class="text-over">
+      <h3>- Contact & Orders -</h3><br>
+      <h2>WE'RE HERE TO HELP.</h2>
+      <p>We now deliver Macarons across the Nth. Island! For Macaron shipping & prices please see details here.<br><br>For Saturday Morning Home Delivery<br>please see details here.<br><br>For all general enquiries and Maracon orders, or enquiries about Corporate Functions & Wedding Catering please fill out the form.</p>
+    </div>
+  </div>
+  <div class="contact-right">
+    <div class="contact-form">
+      <%= simple_form_for @contact do |f| %>
+        <% if flash[:error].present? %>
+          <p> Please correctly complete the fields below</p>
         <% end %>
-      </div>
+        <div class="form-row">
+          <div class="col">
+            <%= f.input :firstname, label:"First Name", error: 'First name is mandatory, please specify one', required: true, class:"form-control"%> <br>
+          </div>
+          <div class="col">
+            <%= f.input :lastname, label:"Last Name", error: 'Last name is mandatory, please specify one', class:"form-control"%> <br>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <%= f.input :phone, label:"Phone Number", error: 'Please enter your phone number', class:"form-control"%> <br>
+          </div>
+          <div class="col">
+            <%= f.input :email, label:'Your Email', required: true, class:"form-control"%> <br>
+            <%= f.input :email2, label:'Your Email', required: false, class:'bot-email'%>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <%= f.input :type, collection:["General Questions & Messages", "Macaron Orders Events", "Weddings & Functions"], label:'How can we help?', error: 'Please select an option from the list', required: true%> <br>
+          </div>
+        </div>
+        <div class="form-text">
+          <%= f.label 'Orders & Questions', required: true %>
+          <%= f.text_area(:message, rows: 3, class:"form-control")%> <br>
+        </div>
+        <%= recaptcha_tags %>
+        <div class="send-button">
+          <%= f.submit 'SEND', class: "send-btn" %>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
 
-<script>
-  ScrollReveal().reveal('.contact-image', { delay: 500, distance: '200px', origin: 'top', easing: 'ease-in'})
-</script>
+
+
+
+
+
+
+
+

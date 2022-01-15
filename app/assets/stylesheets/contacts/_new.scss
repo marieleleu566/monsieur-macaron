@@ -14,18 +14,22 @@ abbr{
 #contact_email2 {
   display:none;
 }
-.contact-title {
+
+.text-over {
+h3 {
+  font-family: 'Lato';
+  font-style: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
   text-align: center;
-  color:#5B1B14;
-  margin-bottom: 50px;
-  font-family:'Ball';
-  font-size: 55px;
+  letter-spacing: 0.05em;
+  color: #000000;
 }
-.contact-grid {
-  display:grid;
-  grid-gap:40px;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 40px;
+h2 {
+  color:#5B1B14;
+  font-family: 'Lato';
+}
 }
 
 .contact-info {

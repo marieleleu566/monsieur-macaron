@@ -1,88 +1,41 @@
-.about-name {
-  text-align: center;
-  margin: 25px 0;
+.photo-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include from-medium-low {
+  flex-direction: row;
+  align-items: inherit;
+  justify-content: flex-start;
+  }
+}
+
+.container-macaron {
+  margin: 50px 20px;
+  position: relative;
+}
+
+.header-text {
   h1 {
-  font-size: 55px;
-  font-family:'Ball';
+    margin-bottom: 0px;
+  }
+  h2 {
+    color: #5B1B14;
+    font-weight: 300;
   }
 }
 
-.about-1 {
-  display:grid;
-  grid-gap:10px;
-  grid-template-columns: 1fr 2fr;
-  h5 {
-    font-size:35px;
-  }
-  h6 {
-    color:#561B16;
-    margin-bottom:40px;
-    font-size:25px;
-  }
-  p {
-    font-size:19px;
-    font-weight:300;
-    margin-bottom:20px;
-  }
+#boxinside {
+  padding: 10px;
+  position: absolute;
+  background-color: white;
+  left: 420px;
+p {
+  margin-bottom: 0px;
+}
 }
 
-.about-2 {
-  margin-top:20px;
-  display:grid;
-  grid-template-columns: 2fr 1fr;
-  p {
-    font-size:19px;
-    font-weight:300;
-    margin-bottom:20px;
-  }
+.photo-ben {
+  padding: 10px 20px;
 }
 
-.about-image-2 {
-  display:flex;
-  justify-content: flex-end;
-}
-
-.about-3 {
-  display:grid;
-  grid-gap: 20px;
-  grid-template-columns: 1fr 2fr;
-  p {
-    font-size:19px;
-    font-weight:300;
-    margin-bottom:20px;
-  }
-  margin-bottom: 100px;
-}
-
-
-@media (max-width: 720px) {
-  .about-1 {
-    grid-template-columns: 1fr;
-  }
-    .about-2 {
-    grid-template-columns: 1fr;
-  }
-    .about-3 {
-    grid-template-columns: 1fr;
-  }
-  .about-image-2, .about-image-1, .about-image-3 {
-    display: flex;
-    justify-content: center;
-}
-  .about-image-3 {
-    margin-top: 10px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .about-image-3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .about-2 {
-    grid-gap: 10px;
-  }
-
-}
