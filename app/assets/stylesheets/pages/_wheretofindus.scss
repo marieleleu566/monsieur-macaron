@@ -67,17 +67,24 @@ h2 {
   font-family: 'Lato';
 }
 background-color: white;
-width: 50%;
+position: inherit;
+width: 100%;
+@include from-medium-low {
+background-color: white;
+width: 70%;
 position: absolute;
 padding: 50px;
 right: 0;
 top: 10%;
 }
+}
 
 .contact-left {
+  @include from-medium-low {
   position: relative;
   background-image: url('croissanthome.png');
   background-size: cover;
+  }
 }
 
 .contact {
@@ -110,22 +117,6 @@ abbr{
   display:none;
 }
 
-.text-over {
-h3 {
-  font-family: 'Lato';
-  font-style: uppercase;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  color: #000000;
-}
-h2 {
-  color:#5B1B14;
-  font-family: 'Lato';
-}
-}
 
 .contact-info {
   text-align: center;

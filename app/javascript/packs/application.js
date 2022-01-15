@@ -33,8 +33,7 @@ import { loadParallaxScroll } from '../components/parallax';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
-  loadDynamicBannerText();
-  loadParallaxScroll();
+
 
   // initSelect2();
 });

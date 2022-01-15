@@ -22,7 +22,19 @@ body {
   }
 }
 
-
+#boxinside-home {
+    position: absolute;
+    background-color: white;
+    left: 0;
+    top: 30%;
+    width: 95%;
+    @include from-medium {
+    top: 30%;
+    right: 0;
+    left: 50%;
+    width: 50%;
+    }
+}
 .text {
   color: white;
   text-transform: uppercase;
