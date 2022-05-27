@@ -57,13 +57,45 @@ margin-bottom: 100px;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background-image: image-url('pic3.jpg');
-  background-size: cover;
   min-height: 650px;
   padding: 50px;
   text-align: center;
   h1 {
-    color: white;
+    color: #5B1B14;
+    letter-spacing: 5px;
+  }
+
+  h5{
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 14px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+.price-boxes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  @include from-medium {
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+}
+
+.price-box-flavor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 650px;
+  padding: 50px;
+  background-color:#F8F5F0;
+  text-align: center;
+  h1 {
+    color: #5B1B14;
     letter-spacing: 5px;
   }
 
