@@ -30,7 +30,7 @@
 #boxinside-find {
   padding: 10px;
   top: 10%;
-  width: 100%;
+  width: 50%;
   position: absolute;
   background-color: white;
   left: 20px;
@@ -39,7 +39,7 @@ p {
 }
 @include from-medium {
   top: 30%;
-  width: 50%;
+  width: 35%;
 }
 }
 
