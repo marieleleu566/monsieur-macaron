@@ -23,10 +23,8 @@ body {
 }
 
 .text-box-left {
-    position: absolute;
+    position: inherit;
     background-color: white;
-    right: 0;
-    top: 0%;
     width: 100%;
     @include from-medium {
     top: 30%;
@@ -36,18 +34,67 @@ body {
     }
 }
 
+.text-box-left-large {
+    position: inherit;
+    background-color: white;
+    width: 100%;
+    @include from-medium {
+    top: 30%;
+    right: 0;
+    bottom: 70%;
+    width: 40%;
+    }
+}
+
+.text-box-right {
+    position: inherit;
+    background-color: white;
+    width: 100%;
+    @include from-medium {
+    top: 30%;
+    left: 0;
+    bottom: 70%;
+    width: 30%;
+    }
+}
+
 .photo {
   width: 100%;
   img {
     max-height: 700px;
+    object-fit:cover;
+    width: 100%;
   }
   @include from-medium {
     width: 90%;
   }
 }
 
+
+.photo-right {
+  padding-left: 0%;
+  width: 100%;
+   img {
+    width: 100%;
+    object-fit:cover;
+    max-height: 700px;
+  }
+  @include from-medium {
+    width: 100%;
+    padding-left: 10%;
+  }
+}
+
+
+
 .container-macaron {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  position: initial;
+  @include from-medium {
+    position: relative;
+    display: inherit;
+  }
 }
 
 .text {
@@ -93,6 +140,7 @@ body {
     font-weight: 500;
     letter-spacing: 2px;
     font-size: 20px;
+    color: #5B1B14;
     @include from-medium {
       font-size: 25px;
     }

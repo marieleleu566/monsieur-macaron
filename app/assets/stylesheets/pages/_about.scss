@@ -26,13 +26,21 @@
 }
 
 #boxinside {
-  padding: 10px;
-  position: absolute;
+  padding: 0px;
+  position: inherit;
   background-color: white;
-  left: 420px;
-p {
-  margin-bottom: 0px;
-}
+  p {
+    margin-bottom: 0px;
+  }
+  @include from-medium {
+      padding: 10px;
+    position: absolute;
+    background-color: white;
+    left: 420px;
+    p {
+      margin-bottom: 0px;
+    }
+  }
 }
 
 .photo-ben {
